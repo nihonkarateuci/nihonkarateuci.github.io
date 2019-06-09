@@ -1,22 +1,107 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 
 /****************************/ 
 /*      Default Styles      */
 /****************************/
+html {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0px;
     font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    overflow: auto;
 }
 
 /****************************/ 
 /*      Header Styles       */
 /****************************/
 header {
-    margin: 10px;
+    position: absolute;
+    top: -20px;
 }
 
+.banner {
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 130% 130%;
+    background-position-x: -30vw;
+    background-position-y: -1vh;
+    height: 150px;
+    width: 100vw;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    top: 23px;
+    left: 10px;
+    border: 1px solid #404040;
+    border-radius: 75px;
+    z-index: 5;
+}
+.logo:hover {
+    cursor: pointer;
+    border: 2px solid #9e1e24;
+    left: 9px;
+    top: 22px;
+}
+
+.header-title {
+    position: absolute;
+    font-size: 54px;
+    font-family: 'Cinzel', serif;
+    color: #dfdfdf;
+    right: 75px;
+    top: 25px;
+    z-index: 4;
+}
+.header-subtitle {
+    position: absolute;
+    font-size: 36px;
+    font-family: 'Cinzel', serif;
+    color: #9e1e24;
+    right: 80px;
+    top: 75px;
+}
+
+nav {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: 115px;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+nav a {
+    color: #dfdfdf;
+    font-size: 18px;
+    text-decoration: none;
+    width: 100px;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
+    border-bottom: 2px solid #dfdfdf;
+}
+nav a:hover{
+    color: #9e1e24;
+    border-bottom: 2px solid #9e1e24;
+}
+
+
+/****************************/ 
+/*      Content Styles      */
+/****************************/
 main {
     margin: 10px;
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
 
 
@@ -24,17 +109,27 @@ main {
 /*      Footer Styles       */
 /****************************/
 footer {
-    background-color: #9e1e24;
-    padding: 15px 0px 15px 0px;
+    position: absolute;
+    bottom: 0;
+    height: 180px;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 130% 130%;
+    background-position-x: -30vw;
+    background-position-y: -1vh;
+    padding-top: 40px;
     color: #dfdfdf;
     text-align: center;
     font-size: 14px;
+    box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .social-media {
     display: table;
     margin-left: 47.5vw;
     margin-right: 47.5vw;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .social-media-wrapper {
@@ -50,12 +145,12 @@ footer {
     font-size: 24px;
 }
 .social-media-icon:hover {
-    color: #A0A0A0;
+    color: #9e1e24;
 }
 
 .email {
     color: #dfdfdf;
 }
 .email:hover {
-    color: #A0A0A0;
+    color: #9e1e24;
 }
