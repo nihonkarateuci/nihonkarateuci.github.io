@@ -20,6 +20,24 @@ b {
     font-weight: bold;
     color: #9e1e24;
 }
+
+@media only screen and (max-width: 872px) {
+    .page-container-desktop {
+        display: none;
+    }
+    .page-container-mobile {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 872px) {
+    .page-container-desktop {
+        display: block;
+    }
+    .page-container-mobile {
+        display: none;
+    }
+}
 /****************************/ 
 /*      Header Styles       */
 /****************************/
