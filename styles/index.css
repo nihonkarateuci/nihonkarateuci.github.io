@@ -38,10 +38,13 @@ b {
         display: none;
     }
 }
+
 /****************************/ 
-/*      Header Styles       */
+/*      Desktop Styles      */
 /****************************/
-header {
+ 
+/*      Header Styles       */
+.header-desktop {
     position: absolute;
     top: -20px;
 }
@@ -116,19 +119,13 @@ nav a:hover{
     border-bottom: 2px solid #9e1e24;
 }
 
-
-/****************************/ 
 /*      Content Styles      */
-/****************************/
 main {
     padding-top: 150px;
     padding-bottom: 180px;
 }
 
-
-/****************************/ 
 /*      Footer Styles       */
-/****************************/
 footer {
     position: absolute;
     bottom: 0;
@@ -174,4 +171,97 @@ footer {
 }
 .email:hover {
     color: #9e1e24;
+}
+
+
+/****************************/ 
+/*      Mobile Styles       */
+/****************************/
+.header-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    text-align: right;
+    background-color: black;
+    color: #dfdfdf;
+}
+
+.mobile-header-title {
+    position: absolute;
+    right: 0.75rem;
+    color: #dfdfdf;
+    font-family: 'Cinzel', serif;
+    font-size: 1.75rem;
+}
+
+.mobile-header-subtitle {
+    position: absolute;
+    right: 0.75rem;
+    top: 2rem;
+    color: #9e1e24;
+    font-family: 'Cinzel', serif;
+    font-size: 1.25rem;
+}
+
+.menu {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: (224, 224, 224, 0.4);
+    /* background-image: url('../images/logo_full.png');
+    background-size: 120% 75%;
+    background-repeat: no-repeat;
+    opacity: 0.5; */
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.menu-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+.menu a:hover, .menu a:focus {
+    color: #9e1e24;
+}
+.menu .close-button {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    top: 4rem;
+    right: 0;
+    text-align: center;
+    line-height: 3rem;
+    vertical-align: middle;
+    font-size: 2.5rem;
+    color: #9e1e24;
+}
+
+.open-button {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 4rem;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 3.5rem;
 }
