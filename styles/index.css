@@ -39,6 +39,24 @@ b {
     }
 }
 
+/* Set the appropriate base font-size for the screen */
+@media only screen and (max-width: 400px) { /* Older Phones */
+    html {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 400px) and (max-width: 600px) { /* Newer Phones */
+    html {
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 872px) { /* Tablets */
+    html {
+        font-size: 24px;
+    }
+}
+
+
 /****************************/ 
 /*      Desktop Styles      */
 /****************************/
@@ -232,7 +250,7 @@ footer {
 .menu a {
     padding: 8px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #000000;
     display: block;
     transition: 0.3s;

@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/index.css" type="text/css">
-        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-        
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>        
         <script src="scripts/index.js" type="text/javascript"></script>
         <link rel="icon" href="images/favicon.ico">
-        <title>UCI Nihon Karate Club</title>
+        <title>Nihon Karate Club @ UCI</title>
     </head>
     <body>
-        <header>
-            <div class="banner"></div>
-            <a class="logo" href="index.html">
-                <img src="images/logo.png" width="120px" height="120px">
-            </a>
-            <div class="header-title">Nihon Karate Club</div>
-            <div class="header-subtitle">UC Irvine</div>
-            <nav>
-                <a href="about.html">About Us</a>
-                <a href="join.html">How to Join</a>
-                <a href="history.html">History</a>
-                <a href="gallery.html">Gallery</a>
-            </nav>
-        </header>
-        <main>
-            <h3>So, you wanna join NKC...</h3>
-            <p>Send an email to the officers at the email address in the footer.</p>
-        </main>
-        <footer>
-            Follow us on social media
-            <div class="social-media">
-                <div class="social-media-wrapper">
-                    <a class="social-media-icon" href="https://www.facebook.com/nihonkarateclubatuci/" target="_blank" title="Like our Facebook page"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a class="social-media-icon" href="https://www.instagram.com/ucikarate/" target="_blank" title="Follow us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>        
-                </div>                    
-            </div>
-            <address>
-                Contact: <a class="email" href="mailto:karate@uci.edu">karate@uci.edu</a>
-            </address>
-            &copy; 2009-<script type="text/javascript">document.write(new Date().getFullYear());</script> UCI Nihon Karate Club
-        </footer>
+        <div class="page-container-desktop">
+            <header>
+                <div class="banner"></div>
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" width="120px" height="120px">
+                </a>
+                <div class="header-title">Nihon Karate Club</div>
+                <div class="header-subtitle">UC Irvine</div>
+                <nav>
+                    <a href="about.html">About Us</a>
+                    <a href="join.html">How to Join</a>
+                    <a href="history.html">History</a>
+                    <a href="gallery.html">Gallery</a>
+                </nav>
+            </header>
+            <main>
+                <h3>So, you wanna join NKC...</h3>
+                <p>Send an email to the officers at the email address in the footer.</p>
+            </main>
+            <footer>
+                Follow us on social media
+                <div class="social-media">
+                    <div class="social-media-wrapper">
+                        <a class="social-media-icon" href="https://www.facebook.com/nihonkarateclubatuci/" target="_blank" title="Like our Facebook page"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a class="social-media-icon" href="https://www.instagram.com/ucikarate/" target="_blank" title="Follow us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>        
+                    </div>                    
+                </div>
+                <address>
+                    Contact: <a class="email" href="mailto:karate@uci.edu">karate@uci.edu</a>
+                </address>
+                &copy; 2009-<script type="text/javascript">document.write(new Date().getFullYear());</script> UCI Nihon Karate Club
+            </footer>
+        </div>
+        <div class="page-container-mobile">
+            <header class="header-mobile">
+                <div class="open-button" onclick="openMenu()">&#9776;</div>
+                <div class="mobile-header-title">Nihon Karate Club</div>
+                <div class="mobile-header-subtitle">UC Irvine</div>    
+                <div id="menu" class="menu">
+                    <a href="javascript:void(0)" class="close-button" onclick="closeMenu()">&times;</a>
+                    <div class="menu-content">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="join.html">How to Join</a>
+                        <a href="history.html">History</a>
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                </div>
+            </header>
+            <main>
+                Join
+            </main>
+        </div>
     </body>
 </html>
