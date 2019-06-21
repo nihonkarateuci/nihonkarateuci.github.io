@@ -15,7 +15,10 @@
     color: #a0a0a0;
     background-color: #3a3a3a;
     grid-column: 1 / 7;
-    /* grid-row: 1 / 4; */
+    background-image: url('../images/test.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 30%;
     height: 70vh;
     width: 70vw;
 }

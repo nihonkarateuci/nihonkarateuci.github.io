@@ -144,7 +144,7 @@ main {
 }
 
 /*      Footer Styles       */
-footer {
+.footer-desktop {
     position: absolute;
     bottom: 0;
     height: 180px;
@@ -204,6 +204,7 @@ footer {
     text-align: right;
     background-color: black;
     color: #dfdfdf;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .mobile-header-title {
@@ -223,6 +224,7 @@ footer {
     font-size: 1.25rem;
 }
 
+/* Mobile Navigation */
 .menu {
     height: 0%;
     width: 100%;
@@ -232,8 +234,9 @@ footer {
     left: 0;
     background-color: (224, 224, 224, 0.4);
     /* background-image: url('../images/logo_full.png');
-    background-size: 120% 75%;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: 0% 30%;
     opacity: 0.5; */
     overflow-y: hidden;
     transition: 0.5s;
@@ -244,11 +247,10 @@ footer {
     top: 25%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
 }
 
 .menu a {
-    padding: 8px;
+    padding: 0.5rem;
     text-decoration: none;
     font-size: 1.5rem;
     color: #000000;
@@ -282,4 +284,42 @@ footer {
     vertical-align: middle;
     cursor: pointer;
     font-size: 3.5rem;
+}
+
+/* Footer Styles */
+.footer-mobile {
+    position: absolute;
+    bottom: 0;
+    height: 8rem;
+    width: 100%;
+    background-color: #101010;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #dfdfdf;
+    text-align: center;
+    box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.social-media-mobile {
+    display: table;
+    margin-left: 40vw;
+    margin-right: 40vw;
+}
+
+.social-media-wrapper-mobile {
+    display: table-row;
+    width: 20vw;
+}
+
+
+.social-media-icon-mobile {
+    display: table-cell;
+    color: #dfdfdf;
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+}
+.social-media-icon-mobile:hover {
+    color: #9e1e24;
 }
