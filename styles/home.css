@@ -1,3 +1,6 @@
+/************************/
+/*    Desktop Styles    */
+/************************/
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
@@ -29,9 +32,25 @@
     background-color: #dfdfdf;
     grid-column: 7 / 8;
     width: 20vw;
-    /* grid-row: 1 / 2; */
     height: 70vh;
 }
 .schedule > * {
     box-shadow: none;
+}
+
+/************************/
+/*    Mobile Styles     */
+/************************/
+@media only screen and (max-width: 872px) {
+    .grid-container {
+        grid-template-columns: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 30px;
+    }
+    .schedule {
+        grid-column: 1 / 1;
+    }
+    .image {
+        grid-column: 1 / 1;
+    }
 }
