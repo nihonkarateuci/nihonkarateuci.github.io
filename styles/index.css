@@ -18,7 +18,7 @@ body {
 
 b {
     font-weight: bold;
-    color: #9e1e24;
+    color: #a0181f;
 }
 
 @media only screen and (max-width: 872px) {
@@ -56,6 +56,13 @@ b {
     }
 }
 
+header {
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
 
 /****************************/ 
 /*      Desktop Styles      */
@@ -90,7 +97,7 @@ b {
 }
 .logo:hover {
     cursor: pointer;
-    border: 2px solid #9e1e24;
+    border: 2px solid #a0181f;
     left: 9px;
     top: 22px;
 }
@@ -108,7 +115,7 @@ b {
     position: absolute;
     font-size: 36px;
     font-family: 'Cinzel', serif;
-    color: #9e1e24;
+    color: #a0181f;
     right: 80px;
     top: 75px;
 }
@@ -133,8 +140,8 @@ nav a {
     border-bottom: 2px solid #dfdfdf;
 }
 nav a:hover{
-    color: #9e1e24;
-    border-bottom: 2px solid #9e1e24;
+    color: #a0181f;
+    border-bottom: 2px solid #a0181f;
 }
 
 /*      Content Styles      */
@@ -193,14 +200,14 @@ nav a:hover{
     font-size: 24px;
 }
 .social-media-icon:hover {
-    color: #9e1e24;
+    color: #a0181f;
 }
 
 .email {
     color: #dfdfdf;
 }
 .email:hover {
-    color: #9e1e24;
+    color: #a0181f;
 }
 
 
@@ -231,7 +238,7 @@ nav a:hover{
     position: absolute;
     right: 0.75rem;
     top: 2rem;
-    color: #9e1e24;
+    color: #a0181f;
     font-family: 'Cinzel', serif;
     font-size: 1.25rem;
 }
@@ -270,7 +277,7 @@ nav a:hover{
     transition: 0.3s;
 }
 .menu a:hover, .menu a:focus {
-    color: #9e1e24;
+    color: #a0181f;
 }
 .menu .close-button {
     position: absolute;
@@ -282,7 +289,7 @@ nav a:hover{
     line-height: 3rem;
     vertical-align: middle;
     font-size: 2.5rem;
-    color: #9e1e24;
+    color: #a0181f;
 }
 
 .open-button {
@@ -333,5 +340,5 @@ nav a:hover{
     padding: 0.5rem;
 }
 .social-media-icon-mobile:hover {
-    color: #9e1e24;
+    color: #a0181f;
 }
