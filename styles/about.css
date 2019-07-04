@@ -16,15 +16,52 @@
 
 .card {
     height: 350px;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2), 0px -2px 2px 0px rgba(0, 0, 0, 0.20);
-    background-color: #a0181f;
-    color: white;
+    background-color: transparent;
+    perspective: 1000px;
 }
 
-.card img {
+.card-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;	
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover .card-content {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background-color: #a0181f;
+    color: #ffffff;
+}
+
+.card-back {
+    background-color: #dfdfdf;
+    color: #000000;
+    transform: rotateY(180deg);
+    overflow-y: scroll;
+}
+
+.card-img {
     width: 100%;
     height: 300px;
     background-color: #dfdfdf;
+}
+
+.card-bio {
+    margin: 0 40px 30px 40px;
+    text-align: justify;
 }
 
 .name {
