@@ -64,7 +64,6 @@ header {
     user-select: none; /* Standard syntax */
 }
 
-
 /****************************/ 
 /*      Desktop Styles      */
 /****************************/
@@ -159,6 +158,18 @@ nav a:hover{
     }
 }
 
+/* Body Styles */
+.title-banner {
+    width: 60%;
+    margin-left: 5%;
+}
+
+.page-content {
+    height: 100%;
+    width: 80%;
+    margin: 30px 10% 30px 10%;
+    text-align: justify;
+}
 
 /*      Footer Styles       */
 .footer-desktop {
