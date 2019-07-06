@@ -48,7 +48,7 @@
         width: 100%;
         margin: 0;
         grid-template-columns: 5% 90% 5%;
-        grid-template-rows: 2rem 20rem 3rem 20rem 3rem;
+        grid-template-rows: 2rem auto 2rem auto 2rem;
         grid-column-gap: 0;
         grid-row-gap: 0;
     }
