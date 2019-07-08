@@ -89,9 +89,9 @@
         grid-template-columns: 5% 90% 5%;
     }
     .card-container.coach {
-        grid-template-rows: 25rem 2rem 25rem;
+        grid-template-rows: auto 2rem auto;
     }
     .card-container.officer {
-        grid-template-rows: 25rem 2rem 25rem 2rem 25rem 2rem 25rem 2rem;
+        grid-template-rows: auto 2rem auto 2rem auto 2rem auto 2rem;
     }
 }
