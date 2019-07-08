@@ -6,7 +6,6 @@
 /****************************/
 html {
     overflow-x: hidden;
-    /* background-color: #dfdfdf; */
 }
 
 body {
@@ -32,6 +31,7 @@ b {
         height: 100%;
         width: 100%;
         display: block;
+        overflow-x: hidden;
     }
     ul {
         text-align: left;
@@ -133,7 +133,6 @@ header {
     color: #dfdfdf;
     right: 75px;
     top: 25px;
-    z-index: 4;
 }
 .header-subtitle {
     position: absolute;
@@ -240,7 +239,8 @@ nav a:hover{
 
 /*      Header Styles       */
 .header-mobile {
-    position: absolute;
+    position: fixed;
+    z-index: 5;
     top: 0;
     left: 0;
     width: 100%;
@@ -312,16 +312,15 @@ nav a:hover{
     color: #a0181f;
 }
 
-.open-button {
+.toggle-button {
     position: absolute;
-    width: 4rem;
-    height: 4rem;
     top: 0;
     left: 0;
+    width: 4rem;
+    height: 4rem;
     text-align: center;
     line-height: 4rem;
     vertical-align: middle;
-    cursor: pointer;
     font-size: 3.5rem;
 }
 
