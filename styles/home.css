@@ -10,6 +10,7 @@
     margin: 0px 30px 0px 30px;
 }
 .grid-container * {
+    /*max-height: 25rem;*/
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 -3px 3px 0 rgba(0, 0, 0, 0.20);
 }
 
