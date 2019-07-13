@@ -1,0 +1,12 @@
+.image-gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1% 32% 1% 32% 1% 32% 1%;
+    grid-template-rows: 50px 50vh 50vh 50vh 50vh 50vh 50px;
+    grid-row-gap: 10px;
+}
+.image-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
