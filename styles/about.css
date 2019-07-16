@@ -3,12 +3,13 @@
     margin: 30px 0 30px 0;
     display: grid;
     grid-template-columns: 10% 35% 10% 35% 10%;
+    grid-row-gap: 35px;
 }
 .card-container.coach {
-    grid-template-rows: 350px;
+    grid-template-rows: 350px 350px 350px;
 }
 .card-container.officer{
-    grid-template-rows: 350px 50px 350px;
+    grid-template-rows: 350px 350px;
 }
 
 .card {
@@ -54,6 +55,7 @@
 .card-img {
     width: 100%;
     height: 300px;
+    object-fit: contain;
     background-color: #dfdfdf;
 }
 
@@ -87,11 +89,16 @@
         margin: 30px 0 30px 0;
         display: grid;
         grid-template-columns: 5% 90% 5%;
+        grid-row-gap: 1.5rem;
     }
     .card-container.coach {
-        grid-template-rows: auto 2rem auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
     }
     .card-container.officer {
-        grid-template-rows: auto 2rem auto 2rem auto 2rem auto 2rem;
+        grid-template-rows: auto auto auto auto 2rem;
+    }
+    .name {
+        font-size: 1.5rem;
+        margin: -6px 0.25rem 0 1rem;
     }
 }
