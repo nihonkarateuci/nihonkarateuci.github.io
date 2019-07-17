@@ -6,6 +6,7 @@
 /****************************/
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
     overflow: auto;
     height: 100%;
     width: 100%;
+    background-color: #f5f5f5;
 }
 
 b {
@@ -76,7 +78,7 @@ header {
 /*      Content Styles      */
 @media only screen and (min-width: 872px) {
     main {
-        padding-top: 260px;
+        padding-top: 240px;
         padding-bottom: 180px;
     }
 }
@@ -95,7 +97,6 @@ header {
 /*      Header Styles       */
 .header-desktop {
     position: absolute;
-    top: -20px;
 }
 
 .banner {
@@ -104,9 +105,9 @@ header {
     background-size: 130% 130%;
     background-position-x: -30vw;
     background-position-y: -1vh;
-    height: 260px;
+    height: 240px;
     width: 100vw;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); */
 }
 
 .header-title {
@@ -182,28 +183,47 @@ header {
 
 .menu-button {
     position: absolute;
-    top: 81px;
+    top: 56px;
     left: 65px;
     height: 120px;
     width: 120px;
     padding: 0;
     margin: 0;
     border-radius: 50%;
-    border: 1px solid #404040;
+    box-shadow: 0 0 3px #ffffff;
     z-index: 5;
     text-decoration: none;
 }
 .menu-button:hover {
     cursor: pointer;
     border: 2px solid #a0181f;
-    top: 80px;
-    left: 64px;
+    top: 54px;
+    left: 63px;
 }
 
 /*      Body Styles      */
 .title-banner {
+    width: 100%;
+    min-height: 100px;
+}
+.title-banner img{
     width: 60%;
+    min-width: 700px;
     margin-left: 5%;
+}
+
+.section {
+    height: 100%;
+    text-align: center;
+}
+
+.floater {
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    font-size: 36px;
+    font-weight: bold;
+    display: inline-block;
 }
 
 .page-content {
@@ -224,7 +244,7 @@ header {
     background-size: 130% 130%;
     background-position-x: -30vw;
     background-position-y: -1vh;
-    box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.2); */
 }
 .footer-content {
     padding: 20px 0px 20px 0px;

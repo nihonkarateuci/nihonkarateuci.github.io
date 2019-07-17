@@ -1,42 +1,73 @@
 /************************/
 /*    Desktop Styles    */
 /************************/
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    /* grid-template-rows: auto auto auto; */
-    grid-column-gap: 30px;
-    height: 80vh;
-    margin: 0px 30px 0px 30px;
-}
-.grid-container * {
-    /*max-height: 25rem;*/
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 -3px 3px 0 rgba(0, 0, 0, 0.20);
-}
-
-.image {
-    text-align: center;
-    color: #a0a0a0;
-    background-color: #3a3a3a;
-    grid-column: 1 / 7;
-    background-image: url('../images/test.jpeg');
+.slideshow {
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/gallery/gallery_8.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0% 30%;
-    height: 70vh;
-    width: 70vw;
 }
 
-.schedule {
-    text-align: left;
-    padding: 0px 20px 0px 20px;
-    background-color: #dfdfdf;
-    grid-column: 7 / 8;
-    width: 20vw;
-    height: 70vh;
+.explore {
+    min-height: 150px;
+    background-color: #ffffff;
+    color: #000000;
 }
-.schedule > * {
-    box-shadow: none;
+
+.explore-container {
+    display: grid;
+    margin: 0 50px 20px 50px;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-column-gap: 3%;
+}
+
+.explore-card {
+    text-align: center;
+    min-height: 100px;
+}
+
+.explore-card a {
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    margin: 0;
+    line-height: 75px;
+    vertical-align: middle;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 32px;
+    background-color: #a0181f;
+}
+
+.explore-card span {
+    text-align: center;
+}
+
+.events {
+    min-height: 400px;
+    background-color: #a0181f;
+    color: #ffffff;
+}
+
+.events-container {
+    display: grid;
+    margin: 0 50px 50px 50px;
+    grid-template-columns: 31% 31% 31%;
+    grid-column-gap: 3%;
+}
+.event-card {
+    background-color: #ffffff;
+    color: #000000;
+    min-height: 250px;
+    border-radius: 15px;
+    box-shadow: 0 0 1px #333333;
+}
+.event-card p {
+    margin: 0 20px 0 20px;
+    text-align: justify;
 }
 
 /************************/
