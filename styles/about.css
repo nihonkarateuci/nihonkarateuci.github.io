@@ -42,12 +42,12 @@
 
 .card-front {
     background-color: #a0181f;
-    color: #ffffff;
+    color: #fdfdfd;
 }
 
 .card-back {
-    background-color: #dfdfdf;
-    color: #000000;
+    background-color: #fdfdfd;
+    color: #030303;
     transform: rotateY(180deg);
     overflow-y: scroll;
 }
@@ -56,7 +56,7 @@
     width: 100%;
     height: 300px;
     object-fit: contain;
-    background-color: #dfdfdf;
+    background-color: #fdfdfd;
 }
 
 .card-bio {

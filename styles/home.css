@@ -10,10 +10,11 @@
     background-size: cover;
 }
 
+/* Explore */
 .explore {
     min-height: 150px;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #fdfdfd;
+    color: #030303;
 }
 
 .explore-container {
@@ -37,7 +38,7 @@
     vertical-align: middle;
     border-radius: 50%;
     text-decoration: none;
-    color: #ffffff;
+    color: #fdfdfd;
     font-size: 32px;
     background-color: #a0181f;
 }
@@ -46,28 +47,68 @@
     text-align: center;
 }
 
+/* Upcoming Events */
 .events {
-    min-height: 400px;
+    min-height: 300px;
     background-color: #a0181f;
-    color: #ffffff;
+    color: #fdfdfd;
 }
 
-.events-container {
+.three-card-container {
     display: grid;
     margin: 0 50px 50px 50px;
     grid-template-columns: 31% 31% 31%;
     grid-column-gap: 3%;
 }
-.event-card {
-    background-color: #ffffff;
-    color: #000000;
-    min-height: 250px;
-    border-radius: 15px;
+.three-card {
+    background-color: #fdfdfd;
+    color: #030303;
+    min-height: 150px;
+    border-radius: 5px;
     box-shadow: 0 0 1px #333333;
 }
 .event-card p {
     margin: 0 20px 0 20px;
     text-align: justify;
+}
+
+/* Mission Statement */
+.mission {
+    min-height: 150px;
+    background-color: #030303;
+    color: #fdfdfd;
+}
+
+.mission-container {
+    margin: 0 50px 50px 50px;
+}
+
+/* Practice Schedule */
+.schedule {
+    min-height: 150px;
+    background-color: #dfdfdf;
+    color: #a0181f;
+}
+
+/* Alumni */
+.alumni {
+    min-height: 400px;
+    padding: 50px;
+    background-image: url('../images/gallery/gallery_0.jpg');
+    background-size: cover;
+    background-position: 0% 25%;
+    background-repeat: no-repeat;
+    color: #fdfdfd;
+}
+
+.image-floater {
+    min-height: 300px;
+    padding-top: 20px;
+    height: 100%;
+    font-size: 28px;
+    border-radius: 35px;
+    background-color: rgb(223, 223, 223, 0.75);
+    color: #a0181f;
 }
 
 /************************/
