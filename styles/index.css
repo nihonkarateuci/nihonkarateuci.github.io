@@ -202,6 +202,27 @@ header {
 }
 
 /*      Body Styles      */
+.page-image {
+    width: 100%;
+    max-height: 550px;
+    background-size: cover;
+    background-position: 0% 15%;
+    background-repeat: no-repeat;
+}
+
+.page-title {
+    width: 100%;
+    padding-top: 350px;
+    padding-bottom: 30px;
+}
+
+.page-image img {
+    width: 65%;
+    background-color: rgb(205, 205, 205, 0.5);
+    border-radius: 0 25px 25px 0;
+
+}
+
 .title-banner {
     width: 100%;
     min-height: 100px;
