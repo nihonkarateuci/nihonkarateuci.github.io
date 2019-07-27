@@ -84,8 +84,8 @@ header {
 }
 @media only screen and (max-width: 872px) {
     main {
-        margin-top: 4rem;
-        margin-bottom: 14rem;
+        padding-top: 4rem;
+        padding-bottom: 14rem;
     }
 }
 
@@ -399,6 +399,13 @@ header {
 }
 
 /*      Body Styles         */
+.mobile-anchor {
+    display: block;
+    position: relative;
+    top: -4rem;
+    visibility: hidden;
+}
+
 @media only screen and (max-width: 872px) {
     .page-image {
         width: 100%;

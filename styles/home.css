@@ -10,6 +10,21 @@
     background-size: cover;
 }
 
+/* Card Containers */
+.three-card-container {
+    display: grid;
+    margin: 0 50px 50px 50px;
+    grid-template-columns: 31% 31% 31%;
+    grid-column-gap: 3%;
+}
+.three-card {
+    background-color: #fdfdfd;
+    color: #030303;
+    min-height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #333333;
+}
+
 /* Explore */
 .explore {
     min-height: 150px;
@@ -54,19 +69,6 @@
     color: #fdfdfd;
 }
 
-.three-card-container {
-    display: grid;
-    margin: 0 50px 50px 50px;
-    grid-template-columns: 31% 31% 31%;
-    grid-column-gap: 3%;
-}
-.three-card {
-    background-color: #fdfdfd;
-    color: #030303;
-    min-height: 150px;
-    border-radius: 5px;
-    box-shadow: 0 0 1px #333333;
-}
 .event-card p {
     margin: 0 20px 0 20px;
     text-align: justify;
@@ -116,28 +118,16 @@
 /*    Mobile Styles     */
 /************************/
 @media only screen and (max-width: 872px) {
-    .grid-container {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        grid-template-columns: 5% 90% 5%;
-        grid-template-rows: 2rem auto 2rem auto 2rem;
-        grid-column-gap: 0;
-        grid-row-gap: 0;
+    .three-card-container {
+        display: grid;
+        margin: 0 2rem 2rem 2rem;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 2rem;
     }
-    .image {
-        width: auto;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    .schedule {
-        width: auto;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 4;
-        grid-row-end: 5;
+
+    .mission-container {
+        margin: 0 4rem 2rem 4rem;
+        font-size: 1rem;
     }
 }
