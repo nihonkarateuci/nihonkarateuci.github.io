@@ -17,7 +17,7 @@ body {
     overflow: auto;
     height: 100%;
     width: 100%;
-    background-color: #f5f5f5;
+    background-color: #fdfdfd;
 }
 
 b {
@@ -173,7 +173,7 @@ header {
     margin-top: -20px;
     position: absolute;
     text-align: center;
-    box-shadow: 0 -2px 2px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 -3px 3px rgba(255, 255, 255, 0.2);
 }
 .circle a:hover {
     background-color: #cf3c43;
@@ -190,47 +190,49 @@ header {
     padding: 0;
     margin: 0;
     border-radius: 50%;
-    box-shadow: 0 0 3px #fdfdfd;
     z-index: 5;
     text-decoration: none;
+    box-shadow:  0 0 15px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    -o-box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
 }
 .menu-button:hover {
     cursor: pointer;
-    border: 2px solid #a0181f;
-    top: 54px;
-    left: 63px;
+    box-shadow:  0 0 25px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+    -o-box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
 }
 
 /*      Body Styles      */
+.shadow {
+    box-shadow:  0 0 5px rgba(155, 155, 155, 0.7);
+    -moz-box-shadow: 0 0 5px rgba(155, 155, 155, 0.7);
+    -webkit-box-shadow: 0 0 5px rgba(155, 155, 155, 0.7);
+    -o-box-shadow: 0 0 5px rgba(155, 155, 155, 0.7);
+}
+
 .page-image {
     width: 100%;
-    max-height: 550px;
+    height: 550px;
     background-size: cover;
     background-position: 0% 15%;
     background-repeat: no-repeat;
 }
 
-.page-title {
-    width: 100%;
-    padding-top: 350px;
-    padding-bottom: 30px;
-}
-
-.page-image img {
-    width: 65%;
-    background-color: rgb(205, 205, 205, 0.5);
-    border-radius: 0 25px 25px 0;
-
-}
-
 .title-banner {
     width: 100%;
-    min-height: 100px;
+    padding: 13px 0 10px 0;
+    background-color: #a0181f;
 }
 .title-banner img{
     width: 60%;
     min-width: 700px;
-    margin-left: 5%;
+    padding-left: 5%;
+    padding-right: 3%;
+    background-color: rgb(245, 245, 245, 0.4);
+    border-radius: 0 15px 15px 0;
 }
 
 .section {
@@ -249,8 +251,8 @@ header {
 
 .page-content {
     height: 100%;
-    width: 80%;
-    margin: 30px 10% 30px 10%;
+    width: 75%;
+    margin: 50px 12.5% 75px 12.5%;
     text-align: justify;
 }
 
@@ -309,7 +311,6 @@ header {
 /****************************/ 
 /*      Mobile Styles       */
 /****************************/
-
 /*      Header Styles       */
 .header-mobile {
     position: fixed;
@@ -398,11 +399,36 @@ header {
 }
 
 /*      Body Styles         */
-.title-banner-mobile {
-    height: 3rem;
-    margin-top: 1rem;
-    margin-bottom: -1.5rem;
+@media only screen and (max-width: 872px) {
+    .page-image {
+        width: 100%;
+        max-height: 17rem;
+        background-size: cover;
+        background-position: 0% 15%;
+        background-repeat: no-repeat;
+    }
+    
+    .title-banner {
+        width: 100%;
+        padding: 0.75rem 0 0.5rem 0;
+        background-color: #a0181f;
+    }
+    .title-banner img{
+        width: 85%;
+        min-width: 12rem;
+        padding-right: 3%;
+        background-color: rgb(245, 245, 245, 0.4);
+        border-radius: 0 15px 15px 0;
+    }
+    .page-content {
+        height: 100%;
+        width: 80%;
+        margin: 0;
+        padding: 2rem 10% 4rem 10%;
+        text-align: justify;
+    }
 }
+
 
 /*      Footer Styles        */
 .footer-mobile {
