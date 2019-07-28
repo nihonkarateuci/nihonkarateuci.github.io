@@ -18,20 +18,34 @@
     grid-column-gap: 3%;
 }
 .three-card {
-    background-color: #fdfdfd;
     color: #030303;
     min-height: 150px;
     border-radius: 5px;
     box-shadow: 0 0 1px #333333;
 }
-
-/* Explore */
-.explore {
-    min-height: 150px;
-    background-color: #fdfdfd;
-    color: #030303;
+.three-card div {
+    height: 300px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+}
+.three-card h3 {
+    width: 80%;
+    height: 50px;
+    margin: -25px 10% 20px 10%;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+}
+.three-card p {
+    margin: 5% 10% 10% 10%;
+    text-align: justify;
 }
 
+/* Explore */
 .explore-container {
     display: grid;
     margin: 0 50px 20px 50px;
@@ -53,44 +67,19 @@
     vertical-align: middle;
     border-radius: 50%;
     text-decoration: none;
-    color: #fdfdfd;
     font-size: 32px;
-    background-color: #a0181f;
-}
-
-.explore-card span {
-    text-align: center;
 }
 
 /* Upcoming Events */
-.events {
-    min-height: 300px;
-    background-color: #a0181f;
-    color: #fdfdfd;
-}
-
 .event-card p {
     margin: 0 20px 0 20px;
     text-align: justify;
 }
 
 /* Mission Statement */
-.mission {
-    min-height: 150px;
-    background-color: #030303;
-    color: #fdfdfd;
-}
-
 .mission-container {
     margin: 0 150px 50px 150px;
     font-size: 20px;
-}
-
-/* Practice Schedule */
-.schedule {
-    min-height: 150px;
-    background-color: #dfdfdf;
-    color: #a0181f;
 }
 
 /* Alumni */
@@ -99,7 +88,7 @@
     padding: 50px;
     background-image: url('../images/gallery/gallery_0.jpg');
     background-size: cover;
-    background-position: 0% 25%;
+    background-position: center;
     background-repeat: no-repeat;
     color: #fdfdfd;
 }
@@ -111,7 +100,6 @@
     font-size: 28px;
     border-radius: 35px;
     background-color: rgb(223, 223, 223, 0.75);
-    color: #a0181f;
 }
 
 /************************/
@@ -128,6 +116,30 @@
 
     .mission-container {
         margin: 0 4rem 2rem 4rem;
+        font-size: 1rem;
+    }
+    
+    .explore {
+        min-height: 150px;
+        background-color: #fdfdfd;
+        color: #030303;
+    }
+    
+    .explore-container {
+        width: 100%;
+        margin: 0 4% 1rem 4%;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-column-gap: 4%;
+    }
+    
+    .explore-card a {
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        font-size: 1.5rem;
+    }
+    
+    .explore-card h3 {
         font-size: 1rem;
     }
 }

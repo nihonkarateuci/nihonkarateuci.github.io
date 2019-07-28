@@ -25,6 +25,32 @@ b {
     color: #a0181f;
 }
 
+.red {
+    background-color: #a0181f;
+}
+.black {
+    background-color: #030303;
+}
+.white {
+    background-color: #fdfdfd;
+}
+.gray {
+    background-color: #dfdfdf;
+}
+.red-text {
+    color: #a0181f;
+}
+.black-text {
+    color: #030303;
+}
+.white-text {
+    color: #fdfdfd;
+}
+.gray-text {
+    color: #dfdfdf;
+}
+
+
 @media only screen and (max-width: 872px) {
     .page-container-desktop {
         display: none;
@@ -236,6 +262,7 @@ header {
 }
 
 .section {
+    min-height: 150px;
     height: 100%;
     text-align: center;
 }
