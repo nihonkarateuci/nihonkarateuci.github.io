@@ -22,7 +22,7 @@
         margin: 0;
         padding: 1.5rem 5% 1.5rem 5%;
         grid-template-columns: auto;
-        grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
+        grid-template-rows: 40vh 40vh 45vh 45vh 40vh 45vh 45vh 40vh 30vh 50vh;
         grid-row-gap: 1.5rem;
     }
     .image-gallery img {

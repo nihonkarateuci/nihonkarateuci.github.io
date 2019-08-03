@@ -4,10 +4,17 @@
 .slideshow {
     width: 100%;
     height: 500px;
-    background-image: url('../images/gallery/gallery_8.jpg');
+    background-image: url('../images/home.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+@media only screen and (max-width: 872px) {
+    .slideshow {
+        width: 100vw;
+        height: 16rem;
+        background-size: cover;
+    }
 }
 
 /* Card Containers */
@@ -15,13 +22,12 @@
     display: grid;
     margin: 0 50px 50px 50px;
     grid-template-columns: 31% 31% 31%;
+    grid-row-gap: 2.5vw;
     grid-column-gap: 3%;
 }
 .three-card {
-    color: #030303;
     min-height: 150px;
     border-radius: 5px;
-    box-shadow: 0 0 1px #333333;
 }
 .three-card div {
     height: 300px;
