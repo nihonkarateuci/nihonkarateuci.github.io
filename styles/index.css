@@ -199,7 +199,10 @@ header {
     margin-top: -20px;
     position: absolute;
     text-align: center;
-    box-shadow: 0 -3px 3px rgba(255, 255, 255, 0.2);
+    box-shadow:  0 0 3px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
+    -o-box-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
 }
 .circle a:hover {
     background-color: #cf3c43;
@@ -218,17 +221,17 @@ header {
     border-radius: 50%;
     z-index: 5;
     text-decoration: none;
-    box-shadow:  0 0 15px rgba(255, 255, 255, 0.7);
-    -moz-box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
-    -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
-    -o-box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    box-shadow:  0 0 10px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    -o-box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 .menu-button:hover {
     cursor: pointer;
-    box-shadow:  0 0 25px rgba(255, 255, 255, 0.7);
-    -moz-box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
-    -webkit-box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
-    -o-box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+    box-shadow:  0 0 20px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    -o-box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
 }
 
 /*      Body Styles      */

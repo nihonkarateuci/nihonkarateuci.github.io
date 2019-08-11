@@ -34,10 +34,7 @@
     border-radius: 5px 5px 0 0;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0% 40%;
-}
-.three-card.small div {
-    height: 200px;
+    background-position: center;
 }
 .three-card h3 {
     width: 80%;
@@ -90,11 +87,13 @@
     font-size: 20px;
 }
 
-/* Alumni */
-.alumni {
+/* Our Dojo */
+.dojo {
+    margin: 0;
+    width: 100%;
     min-height: 400px;
     padding: 50px;
-    background-image: url('../images/gallery/gallery_0.jpg');
+    background-image: url('../images/home/jinenkai.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,12 +101,19 @@
 }
 
 .image-floater {
-    /* padding-top: 20px; */
     height: 100%;
-    min-height: 400px;
-    font-size: 28px;
+    width: 25%;
+    margin-left: 16%;
+    padding: 2% 5% 2% 5%;
     border-radius: 35px;
     background-color: rgb(223, 223, 223, 0.75);
+}
+.image-floater h2 {
+    font-size: 32px;
+}
+.image-floater p {
+    font-size: 16px;
+    text-align: justify;
 }
 
 /************************/
@@ -149,5 +155,25 @@
     
     .explore-card h3 {
         font-size: 1rem;
+    }
+
+    .dojo {
+        background-image: none;
+        padding: 5%;
+    }
+
+    .image-floater {
+        width: 80%;
+        margin: 0;
+        padding: 2% 5% 2% 5%;
+        border-radius: 2rem;
+        background-color: rgb(223, 223, 223, 0.75);
+    }
+    .image-floater h2 {
+        font-size: 2.5rem;
+    }
+    .image-floater p {
+        font-size: 1.25rem;
+        text-align: justify;
     }
 }
