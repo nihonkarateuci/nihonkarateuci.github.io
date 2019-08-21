@@ -11,7 +11,7 @@ html {
 
 body {
     margin: 0px;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', 'Helvetica', sans-serif;
     position: relative;
     min-height: 100vh;
     overflow: auto;
@@ -23,6 +23,14 @@ body {
 b {
     font-weight: bold;
     color: #a0181f;
+}
+
+a {
+    color: #a0181f;
+}
+
+ul {
+    text-align: left;
 }
 
 .red {
@@ -50,7 +58,6 @@ b {
     color: #dfdfdf;
 }
 
-
 @media only screen and (max-width: 872px) {
     .page-container-desktop {
         display: none;
@@ -60,9 +67,6 @@ b {
         width: 100%;
         display: block;
         overflow-x: hidden;
-    }
-    ul {
-        text-align: left;
     }
 }
 
@@ -281,9 +285,11 @@ header {
 
 .page-content {
     height: 100%;
-    width: 75%;
-    margin: 50px 12.5% 75px 12.5%;
+    width: 65%;
+    font-size: 1.1rem;
+    margin: 75px 17.5% 75px 17.5%;
     text-align: justify;
+    color: #202020;
 }
 
 /*      Footer Styles      */
