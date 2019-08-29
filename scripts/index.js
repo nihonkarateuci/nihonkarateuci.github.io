@@ -43,21 +43,21 @@ function renderCircleMenu(topIndex) {
 
 function getCookieData(key) {
     const cookie = decodeURIComponent(document.cookie);
-    console.log(cookie);
     return cookie.split(';').find(function(entry) {
         let data = entry;
         while (data.charAt(0) === ' ') {
             data = data.substring(1);
         }
-        return data.indexOf('timeout') === 0;
+        return data.indexOf(key + '=') === 0;
     });
 }
 
 function hideAnnouncement() {
     const timeout = getCookieData('timeout');
     if (timeout !== undefined) {
-        timeoutEnd = timeout.substring('timeout'.length, timeout.length); // Extract expiration time
-        if (new Date(timeoutEnd) > new Date()) {
+        timeoutEnd = timeout.substring('timeout='.length, timeout.length); // Extract expiration time
+        // Hide the announcement if the user has seen it within the last day
+	if (new Date(timeoutEnd) < new Date()) {
             document.getElementById("announcement").style.display = 'none';
         }
     }
