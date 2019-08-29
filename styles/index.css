@@ -123,8 +123,8 @@ header {
     position: fixed;
     z-index: 30;
     width: 60%;
-    margin: 25px 20% 0 20%;
-    padding: 1rem;
+    padding: 2.5%;
+    margin: 25px 17.5% 0 17.5%;
     height: 2rem;
     line-height: 2rem;
     vertical-align: middle;
@@ -139,18 +139,20 @@ header {
     right: 2rem;
     font-size: 2rem;
     cursor: pointer;
-
 }
 
 @media only screen and (max-width: 872px) {
     .announcement {
-        font-size: 1rem;
-        width: 60%;
-        height: 3rem;
+        font-size: 1.25rem;
         height: auto;
+        width: 75%;
+        padding: 7.5%;
+        margin: 25px 5% 0 5%;
     }
     .close-announcement {
-        font-size: 1rem;
+        font-size: 2.5rem;
+        right: 0.75rem;
+        top: 0.25rem;
     }
 }
 
