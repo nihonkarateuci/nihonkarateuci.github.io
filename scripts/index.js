@@ -23,13 +23,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         e.preventDefault();
         document.querySelector('.circle').classList.toggle('open');
     }
-
-    // Close announcement and set cookie
-    document.getElementById("close-announcement").addEventListener("click", function() {
-        const timeout = new Date(new Date() + 24*60*60*1000).toISOString();
-        document.cookie = "timeout=" + timeout;
-        document.getElementById("announcement").style.opacity = 0;
-    });
 });
 
 function renderCircleMenu(topIndex) {
@@ -57,8 +50,17 @@ function hideAnnouncement() {
     if (timeout !== undefined) {
         timeoutEnd = timeout.substring('timeout='.length, timeout.length); // Extract expiration time
         // Hide the announcement if the user has seen it within the last day
-	if (new Date(timeoutEnd) < new Date()) {
+	console.log(new Date(timeoutEnd) < new Date(), timeoutEnd);
+        if (new Date(timeoutEnd) > new Date()) {
             document.getElementById("announcement").style.display = 'none';
         }
     }
+}
+
+// Close announcement and set cookie
+function closeAnnouncement() {
+    const timeout = new Date();
+    timeout.setTime(timeout.getTime() + 24*60*60*1000);
+    document.cookie = "timeout=" + timeout.toISOString();
+    document.getElementById("announcement").style.opacity = 0;
 }
