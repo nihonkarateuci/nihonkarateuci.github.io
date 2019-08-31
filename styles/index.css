@@ -422,7 +422,7 @@ header {
     z-index: 5;
     top: 4rem;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     overflow-y: hidden;
     transition: 0.5s;
 }

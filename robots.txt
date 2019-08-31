@@ -1,0 +1,8 @@
+User-agent: *
+Crawl-delay: 125
+Disallow: https://www.clubs.uci.edu/images/
+Disallow: https://www.clubs.uci.edu/resources/
+Disallow: https://www.clubs.uci.edu/scripts/
+Disallow: https://www.clubs.uci.edu/styles/
+
+Sitemap: https://www.clubs.uci.edu/sitemap.xml
