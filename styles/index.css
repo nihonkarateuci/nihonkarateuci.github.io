@@ -408,10 +408,10 @@ header {
 .mobile-header-subtitle {
     position: absolute;
     right: 0.75rem;
-    top: 2rem;
+    top: 1.75rem;
     color: #a0181f;
     font-family: 'Cinzel', serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 /* Mobile Navigation */

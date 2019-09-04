@@ -23,12 +23,22 @@
     margin: 0 50px 50px 50px;
     grid-template-columns: 31% 31% 31%;
     grid-row-gap: 2.5vw;
-    grid-column-gap: 3%;
+    grid-column-gap: 3.5%;
 }
-.three-card {
+.four-card-container {
+    display: grid;
+    margin: 0 50px 50px 50px;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-row-gap: 2.5vw;
+    grid-column-gap: 4%;
+}
+
+/* Styling of a basic card for a card container */
+.grid-card {
     border-radius: 5px;
 }
-.three-card div {
+/* card image */
+.grid-card div {
     width: 100%;
     height: 300px;
     border-radius: 5px 5px 0 0;
@@ -36,7 +46,8 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-.three-card h3 {
+/* card header */
+.grid-card h3 {
     width: 80%;
     height: 50px;
     margin: -25px 10% 20px 10%;
@@ -45,12 +56,13 @@
     line-height: 50px;
     vertical-align: middle;
 }
-.three-card p {
+/* card content */
+.grid-card p {
     margin: 5% 10% 10% 10%;
     text-align: justify;
 }
 
-/* Explore */
+/* Explore Section */
 .explore-container {
     display: grid;
     margin: 0 50px 20px 50px;
@@ -75,19 +87,19 @@
     font-size: 32px;
 }
 
-/* Upcoming Events */
+/* Upcoming Events Section */
 .event-card p {
     margin: 0 20px 0 20px;
     text-align: justify;
 }
 
-/* Mission Statement */
+/* Mission Statement Section */
 .mission-container {
     margin: 0 150px 50px 150px;
     font-size: 20px;
 }
 
-/* Our Dojo */
+/* Our Dojo Section */
 .dojo {
     margin: 0;
     width: 100%;
@@ -125,6 +137,14 @@
         margin: 0 2rem 2rem 2rem;
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
+        grid-row-gap: 2rem;
+    }
+
+    .four-card-container {
+        display: grid;
+        margin: 0 2rem 2rem 2rem;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
         grid-row-gap: 2rem;
     }
 
