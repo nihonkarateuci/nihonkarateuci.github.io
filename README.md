@@ -31,7 +31,11 @@ The only dependencies are [Font Awesome 4.7.0](https://cdnjs.cloudflare.com/ajax
 * `README.md` - You're looking at it right now
 
 ### **Build Guide**
-When deploying the site, include the following files and directories: 
+Run `python3 build.py` to build a folder to deploy to the sftp server
+
+When modifying build.py, consider the following: 
+
+Include the following files and directories: 
 * `*.html`
 * `images/` - With the exception of `./images/extras/`
 * `scripts/`
@@ -54,4 +58,5 @@ Additionally, it would be great if you could [minify](https://www.minifier.org) 
 - The flipping bio cards behave strangely on mobile.
 
 ## Build History
-- [20190830](https://github.com/aramuk/nihon-karate-website/releases/tag/v1.0.0-beta): The first iteration of the site was deployed
+- [v1.0.0-beta](https://github.com/aramuk/nihon-karate-website/releases/tag/v1.0.0-beta): The first iteration of the site was deployed
+- [v1.0.0](https://github.com/aramuk/nihon-karate-website/releases/tag/v1.0.0): First full deployment of website

@@ -18,7 +18,7 @@ def get_version_as_date():
 
 if __name__ == '__main__':
     # Generate a name for the build if one was not passed
-    version = sys.argv[1] if len(sys.argv) == 0 else get_version_as_date()
+    version = sys.argv[1] if len(sys.argv) > 0 else get_version_as_date()
     build_name = f'nkcsite-build-{version}'
     try:
         print(f'Building NKC Website as {build_name}')
