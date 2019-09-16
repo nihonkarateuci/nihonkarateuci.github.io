@@ -305,6 +305,7 @@ header {
 }
 
 .section {
+    padding-bottom: 1rem;
     min-height: 150px;
     height: 100%;
     text-align: center;
