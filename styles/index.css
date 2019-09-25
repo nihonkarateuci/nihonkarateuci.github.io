@@ -14,7 +14,8 @@ body {
     font-family: 'Titillium Web', 'Helvetica', sans-serif;
     position: relative;
     min-height: 100vh;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     height: 100%;
     width: 100%;
     background-color: #fdfdfd;
@@ -461,28 +462,18 @@ header {
 .menu a:hover, .menu a:focus {
     color: #a0181f;
 }
-.menu .close-button {
-    position: absolute;
-    height: 3rem;
-    width: 3rem;
-    right: 0;
-    text-align: center;
-    line-height: 3rem;
-    vertical-align: middle;
-    font-size: 2.5rem;
-    color: #a0181f;
-}
 
 .toggle-button {
     position: absolute;
-    top: 0;
+    top: -0.25rem;
     left: 0;
+    padding: 0;
     width: 4rem;
     height: 4rem;
     text-align: center;
     line-height: 4rem;
     vertical-align: middle;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 /*      Body Styles         */

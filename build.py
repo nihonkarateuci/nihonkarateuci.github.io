@@ -25,7 +25,7 @@ def build_project(build_name):
     subprocess.run(f'zip -r {build_name}.zip {build_name}', shell=True)
 
 def get_version_as_date():
-    """Returns a the name of the build in 'nkcsite-build-YYYYMMDD' format"""
+    """Returns a the name of the build in 'YYYYMMDD' format"""
     date = datetime.now()
     return '%04d%02d%02d' % (date.year, date.month, date.day)
 

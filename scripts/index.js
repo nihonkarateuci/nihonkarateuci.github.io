@@ -8,12 +8,14 @@ function toggleMenu() {
         menu.style.height = "100%";
     } else {
         button.innerHTML = "&#9776;";
-        button.style.top = "0";
+        button.style.top = "-0.25rem";
         menu.style.height = "0%";
     }
 }
 
 document.addEventListener("DOMContentLoaded", e => { 
+    renderCircleMenu(0);
+
     // Set circle menu to open
     document.querySelector('.circle').classList.toggle('open');
 
