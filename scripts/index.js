@@ -1,14 +1,14 @@
 // Opens and closes mobile menu
 function toggleMenu() {
-    let menu = document.getElementById("menu");
-    let button = document.getElementById("toggle-button");
-    if (button.innerHTML == "\u2630") {
+    const menu = document.getElementById("menu");
+    const button = document.getElementById("toggle-button");
+    if (button.innerHTML === "\u2630") {
         button.innerHTML = "&times;";
-        button.style.top = "-0.35rem";
+        button.style.top = "-0.25rem";
         menu.style.height = "100%";
     } else {
         button.innerHTML = "&#9776;";
-        button.style.top = "-0.25rem";
+        button.style.top = 0;
         menu.style.height = "0%";
     }
 }
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", e => {
     document.querySelector('.circle').classList.toggle('open');
 
     // Add listener for closing menu
-    document.querySelector('.menu-button').onclick = function(e) {
+    document.querySelector('.menu-button').onclick = e => {
         e.preventDefault();
         document.querySelector('.circle').classList.toggle('open');
     }
@@ -48,18 +48,18 @@ function getCookieData(key) {
     });
 }
 
-function hideAnnouncement() {
+// Shows the announcement if the user has not seen it within the last day
+function showAnnouncement() {
     const timeout = getCookieData('timeout');
-    if (timeout !== undefined) {
-        timeoutEnd = timeout.substring('timeout='.length, timeout.length); // Extract expiration time
-        // Hide the announcement if the user has seen it within the last day
-        if (new Date(timeoutEnd) > new Date()) {
-            document.getElementById("announcement").style.display = 'none';
-        }
+    if (!timeout || 
+        // Extract timeout from cookie and compare to current date
+        new Date(timeout.substring('timeout='.length, timeout.length)) < new Date()
+    ) {
+        document.getElementById("announcement").style.opacity = 100;
     }
 }
 
-// Hide announcement and set announcement timeout cookie
+// Hides announcement and set announcement timeout cookie
 function closeAnnouncement() {
     const timeout = new Date();
     // Timeout is 24 hours from time that announcement is closed

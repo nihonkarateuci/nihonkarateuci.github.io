@@ -5,7 +5,7 @@ import subprocess
 import shutil
 import requests
 
-EXCLUDED_ITEMS = {Path('./build.py'), Path('./README.md'), Path('./setup.sh'), Path('./defaults'), Path('./extras')}
+EXCLUDED_ITEMS = {Path('./build.py'), Path('./README.md'), Path('./setup.sh'), Path('./defaults'), Path('./extras'), Path('.git')}
 
 def minify_dir(dir_name):
     """Minifies all JS and CSS files in a diretory"""

@@ -133,12 +133,20 @@ header {
     font-size: 1.25rem;
     background-color: rgb(255,255,255,0.9);
     border-radius: 1rem;
+    opacity: 0;
     transition: opacity 0.25s linear;
+    pointer-events: none;
+}
+.announcement a {
+    pointer-events: all;
+    cursor: pointer;
 }
 .close-announcement {
     position: absolute;
     right: 2rem;
     font-size: 2rem;
+    cursor: pointer;
+    pointer-events: all;
     cursor: pointer;
 }
 
@@ -439,13 +447,13 @@ header {
     top: 4rem;
     left: 0;
     background-color: rgba(255, 255, 255, 0.9);
-    overflow-y: hidden;
     transition: 0.5s;
+    overflow-y: auto;
 }
 
 .menu-content {
     position: relative;
-    top: 20%;
+    top: 2rem;
     width: 100%;
     text-align: center;
 }
@@ -465,9 +473,10 @@ header {
 
 .toggle-button {
     position: absolute;
-    top: -0.25rem;
     left: 0;
     padding: 0;
+    border: none;
+    text-decoration: none;
     width: 4rem;
     height: 4rem;
     text-align: center;
