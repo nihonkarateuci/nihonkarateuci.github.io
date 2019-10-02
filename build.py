@@ -43,31 +43,29 @@ def build():
         print('Failed to build NKC Website')
 
 def clean():
+    """Deletes build files in current dir """
     try:
-        print('Cleaning build_nae')
+        print('Cleaning all builds')
+        subprocess.run('rm -rf nkcsite-build-*', shell=True)
+        print('Successfully cleaned all builds')
     except Exception as e:
         print(f'{type(e).__name__}: {e}')
-        print('Failed to build NKC Website')
+        print('Failed to clean builds')
 
 if __name__ == '__main__':
-    # Make sure an option was provided
-    if len(sys.argv) < 2:
-        print('Please provided')
-        sys.exit(1)
-    
     # Possible commands
-    options = {
+    commands = {
         'build': build,
         'clean': clean,
     }
 
-    # F
-    operation = options.get(sys.argv[1])
-    if not operation:
-        print('Please prov')
+    # Make sure a valid command was provided
+    if len(sys.argv) < 2 or sys.argv[1] not in commands:
+        print('Please provide a valid option')
         sys.exit(1)
-    print('hi')
-    # else:
-        # operation()
+
+    # Identify and execute operation associated with command
+    operation = commands[sys.argv[1]]
+    operation()
 
 
