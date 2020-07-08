@@ -1,16 +1,14 @@
 // Opens and closes mobile menu
 function toggleMenu() {
-    const menu = document.getElementById("menu");
+    const menu = document.getElementById("dropdown");
     const button = document.getElementById("toggle-button");
     const icon = button.querySelector('i');
     if (icon.className === "fa fa-bars") {
         icon.className = 'fa fa-times';
-        // button.style.top = "-0.25rem";
-        // menu.style.height = "100%";
+        menu.style.height = "100%";
     } else {
         icon.className = 'fa fa-bars';
-        // button.style.top = 0;
-        // menu.style.height = "0%";
+        menu.style.height = "0%";
     }
 }
 
