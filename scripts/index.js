@@ -2,14 +2,15 @@
 function toggleMenu() {
     const menu = document.getElementById("menu");
     const button = document.getElementById("toggle-button");
-    if (button.innerHTML === "\u2630") {
-        button.innerHTML = "&times;";
-        button.style.top = "-0.25rem";
-        menu.style.height = "100%";
+    const icon = button.querySelector('i');
+    if (icon.className === "fa fa-bars") {
+        icon.className = 'fa fa-times';
+        // button.style.top = "-0.25rem";
+        // menu.style.height = "100%";
     } else {
-        button.innerHTML = "&#9776;";
-        button.style.top = 0;
-        menu.style.height = "0%";
+        icon.className = 'fa fa-bars';
+        // button.style.top = 0;
+        // menu.style.height = "0%";
     }
 }
 
