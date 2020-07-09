@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cinzel&display=swap");
 
 html {
     overflow-x: hidden;
@@ -8,7 +8,7 @@ html {
 
 body {
     margin: 0px;
-    font-family: 'Titillium Web', 'Helvetica', sans-serif;
+    font-family: "Titillium Web", "Helvetica", sans-serif;
     position: relative;
     min-height: 100vh;
     overflow-y: auto;
@@ -17,6 +17,7 @@ body {
     width: 100%;
     background-color: #fdfdfd;
 }
+
 /*--------------------------*/
 /*      Text Styles         */
 /*--------------------------*/
@@ -55,42 +56,22 @@ ul {
 .gray {
     background-color: #dfdfdf;
 }
-/* 
-@media only screen and (max-width: 872px) {
-    .page-container-desktop {
-        display: none;
-    }
-    .page-container-mobile {
-        height: 100%;
-        width: 100%;
-        display: block;
-        overflow-x: hidden;
-    }
-}
-
-@media only screen and (min-width: 872px) {
-    .page-container-desktop {
-        height: 100%;
-        width: 100%;
-        display: block;
-    }
-    .page-container-mobile {
-        display: none;
-    }
-} */
 
 /* Set the appropriate base font-size for the screen */
-@media only screen and (max-width: 400px) { /* Older Phones */
+@media only screen and (max-width: 400px) {
+    /* Older Phones */
     html {
         font-size: 14px;
     }
 }
-@media only screen and (min-width: 400px) and (max-width: 600px) { /* Newer Phones */
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    /* Newer Phones */
     html {
         font-size: 18px;
     }
 }
-@media only screen and (min-width: 600px) and (max-width: 872px) { /* Tablets */
+@media only screen and (min-width: 600px) and (max-width: 872px) {
+    /* Tablets */
     html {
         font-size: 24px;
     }
@@ -105,7 +86,7 @@ header {
 }
 
 /*--------------------------*/
-/*  Main Content Styling    */
+/*    Main Content Styling   */
 /*--------------------------*/
 /* Leaves space for header and footer */
 @media only screen and (min-width: 872px) {
@@ -133,7 +114,7 @@ header {
     vertical-align: middle;
     text-align: center;
     font-size: 1.25rem;
-    background-color: rgb(255,255,255,0.9);
+    background-color: rgb(255, 255, 255, 0.9);
     border-radius: 1rem;
     opacity: 0;
     transition: opacity 0.25s linear;
@@ -170,13 +151,13 @@ header {
 /*--------------------------*/
 /*      Header Styles       */
 /*--------------------------*/
-.header-desktop {
+header {
     position: absolute;
 }
 
 /* Background wave banner for header */
 .banner {
-    background-image: url('../images/background.jpg');
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: 130% 130%;
     background-position-x: -30vw;
@@ -206,14 +187,14 @@ header {
 .header-title {
     position: absolute;
     font-size: 56px;
-    font-family: 'Cinzel', serif;
+    font-family: "Cinzel", serif;
     color: #dfdfdf;
     right: 75px;
     top: 50px;
 }
 .header-subtitle {
     position: absolute;
-    font-family: 'Cinzel', serif;
+    font-family: "Cinzel", serif;
     color: #a0181f;
 }
 @media only screen and (min-width: 872px) {
@@ -223,7 +204,7 @@ header {
         top: 50px;
     }
     .header-subtitle {
-        font-size: 48px;
+        font-size: 42px;
         right: 80px;
         top: 105px;
     }
@@ -235,7 +216,7 @@ header {
         top: 0.5rem;
     }
     .header-subtitle {
-        font-size: 1.25rem;
+        font-size: 1.35rem;
         right: 1rem;
         top: 2rem;
     }
@@ -256,16 +237,17 @@ header {
         display: none;
     }
 }
+
 /* Ring of icons */
 .circle {
     width: 250px;
     height: 250px;
     opacity: 0;
-    
+
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     transform: scale(0);
-  
+
     -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
@@ -293,7 +275,7 @@ header {
     margin-top: -20px;
     position: absolute;
     text-align: center;
-    box-shadow:  0 0 3px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
     -moz-box-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
     -webkit-box-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
     -o-box-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
@@ -302,6 +284,7 @@ header {
     background-color: #cf3c43;
     transition: background-color 0.5s ease;
 }
+
 /* Button for circle menu (Jinen-Kai Logo) */
 .menu-button {
     position: absolute;
@@ -314,14 +297,14 @@ header {
     border-radius: 50%;
     z-index: 5;
     text-decoration: none;
-    box-shadow:  0 0 10px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
     -moz-box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
     -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
     -o-box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 .menu-button:hover {
     cursor: pointer;
-    box-shadow:  0 0 20px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
     -moz-box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
     -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
     -o-box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
@@ -338,6 +321,7 @@ header {
     line-height: 4rem;
     vertical-align: center;
 }
+
 @media only screen and (max-width: 872px) {
     .toggle-button {
         display: block;
@@ -348,6 +332,7 @@ header {
         z-index: 10;
     }
 }
+
 .dropdown {
     height: 0%;
     width: 100%;
@@ -359,12 +344,14 @@ header {
     transition: 0.5s;
     overflow-y: auto;
 }
+
 .dropdown-content {
     position: relative;
     top: 2rem;
     width: 100%;
     text-align: center;
 }
+
 .dropdown a {
     padding: 0.5rem;
     text-decoration: none;
@@ -374,40 +361,41 @@ header {
     display: block;
     transition: 0.3s;
 }
-.dropdown a:hover, .dropdown a:focus {
+.dropdown a:hover,
+.dropdown a:focus {
     color: #a0181f;
 }
 
+/*-----------------------*/
 /*      Body Styles      */
+/*-----------------------*/
 .shadow {
-    box-shadow:  0 0 5px rgba(155, 155, 155, 0.7);
+    box-shadow: 0 0 5px rgba(155, 155, 155, 0.7);
     -moz-box-shadow: 0 0 5px rgba(155, 155, 155, 0.7);
     -webkit-box-shadow: 0 0 5px rgba(155, 155, 155, 0.7);
     -o-box-shadow: 0 0 5px rgba(155, 155, 155, 0.7);
 }
 
+/* Image at the top of the page */
 .page-image {
     width: 100%;
-    height: 550px;
     background-size: cover;
     background-position: 0% 15%;
     background-repeat: no-repeat;
 }
 
+/* Title for content pages */
 .title-banner {
     width: 100%;
-    padding: 13px 0 10px 0;
     background-color: #a0181f;
 }
-.title-banner img{
+.title-banner img {
     width: 60%;
-    min-width: 700px;
-    padding-left: 5%;
     padding-right: 3%;
     background-color: rgb(245, 245, 245, 0.4);
-    border-radius: 0 15px 15px 0;
 }
 
+/* Content sections (as seen on home page) */
 .section {
     padding-bottom: 1rem;
     min-height: 150px;
@@ -415,20 +403,12 @@ header {
     text-align: center;
 }
 
-.section-button-container {
-    margin: 2% 40% 2% 40%;
-    width: 20%;
-}
 .section-button {
-    border-radius: 10px;
-    padding: 15px 30px 15px 30px;
-    height: 75px;
-    line-height: 75px;
     vertical-align: middle;
     text-decoration: none;
 }
 
-
+/* Title for content sections */
 .floater {
     height: 100px;
     line-height: 100px;
@@ -438,54 +418,127 @@ header {
     display: inline-block;
 }
 
+/* Title for content pages */
 .page-content {
     height: 100%;
-    width: 65%;
     font-size: 1.1rem;
-    margin: 75px 17.5% 75px 17.5%;
     text-align: justify;
     color: #202020;
 }
 
+.anchor {
+    visibility: hidden;
+    display: block;
+    position: relative;
+}
+
+@media only screen and (min-width: 872px) {
+    /* Image at the top of the page */
+    .page-image {
+        height: 550px;
+    }
+
+    /* Title for content pages */
+    .title-banner {
+        padding: 13px 0 10px 0;
+    }
+    .title-banner img {
+        min-width: 700px;
+        padding-left: 5%;
+    }
+
+    /* Header for content pages */
+    .page-content {
+        width: 65%;
+        margin: 75px 17.5% 75px 17.5%;
+    }
+
+    /* Content sections (as seen on home page) */
+    .section-button-container {
+        margin: 2% 40% 2% 40%;
+        width: 20%;
+    }
+
+    .section-button {
+        border-radius: 10px;
+        padding: 15px 30px 15px 30px;
+        height: 75px;
+        line-height: 75px;
+    }
+}
+
+@media only screen and (max-width: 872px) {
+    /* Image at the top of the page */
+    .page-image {
+        max-height: 17rem;
+    }
+
+    /* Title for content pages */
+    .title-banner {
+        padding: 0.75rem 0 0.5rem 0;
+    }
+    .title-banner img {
+        width: 85%;
+        min-width: 12rem;
+    }
+
+    /* Title for content pages */
+    .page-content {
+        width: 80%;
+        margin: 0;
+        padding: 2rem 10% 4rem 10%;
+    }
+
+    /* Use with anchor tags to jump below header */
+    .anchor {
+        top: -4rem;
+    }
+
+    /* Content sections (as seen on home page) */
+    .section-button-container {
+        margin: 2rem 15% 2rem 15%;
+        width: 70%;
+    }
+
+    .section-button {
+        border-radius: 0.5rem;
+        padding: 1rem 2rem 1rem 2rem;
+        height: 3rem;
+        line-height: 3rem;
+    }
+}
+
+/*-------------------------*/
 /*      Footer Styles      */
-.footer-desktop {
+/*-------------------------*/
+footer {
     position: absolute;
     bottom: 0;
     height: 180px;
     width: 100%;
-    background-image: url('../images/background.jpg');
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: 130% 130%;
     background-position-x: -30vw;
     background-position-y: -1vh;
-    /* box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.2); */
 }
+
 .footer-content {
-    padding: 20px 0px 20px 0px;
     color: #dfdfdf;
     text-align: center;
-    font-size: 14px;
 }
 
 .social-media {
     display: table;
-    margin-left: 47.5vw;
-    margin-right: 47.5vw;
-    margin-top: 20px;
-    margin-bottom: 15px;
 }
 
 .social-media-wrapper {
     display: table-row;
-    width: 5vw;
 }
 
 .social-media-icon {
-    color: #dfdfdf;
-    width: 40px;
-    height: 40px;
     display: table-cell;
-    font-size: 24px;
+    color: #dfdfdf;
 }
 .social-media-icon:hover {
     color: #a0181f;
@@ -498,130 +551,61 @@ header {
     color: #a0181f;
 }
 
+@media only screen and (min-width: 872px) {
+    footer {
+        height: 180px;
+    }
 
-/****************************/ 
-/*      Mobile Styles       */
-/****************************/
-/*      Header Styles       */
-.header-mobile {
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4rem;
-    text-align: right;
-    background-color: #030303;
-    color: #dfdfdf;
-    box-shadow: 0 10px 15px rgba(155, 155, 155, 0.4);
-}
+    .footer-content {
+        padding: 20px 0px 20px 0px;
+        font-size: 14px;
+    }
 
-.mobile-header-title {
-    position: absolute;
-    right: 0.75rem;
-    color: #dfdfdf;
-    font-family: 'Cinzel', serif;
-    font-size: 1.75rem;
-}
+    .social-media {
+        margin-left: 47.5vw;
+        margin-right: 47.5vw;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
 
-.mobile-header-subtitle {
-    position: absolute;
-    right: 0.75rem;
-    top: 1.75rem;
-    color: #a0181f;
-    font-family: 'Cinzel', serif;
-    font-size: 1.5rem;
-}
+    .social-media-wrapper {
+        width: 5vw;
+    }
 
-/*      Body Styles      */
-.mobile-anchor {
-    display: block;
-    position: relative;
-    top: -4rem;
-    visibility: hidden;
+    .social-media-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
 }
 
 @media only screen and (max-width: 872px) {
-    .page-image {
-        width: 100%;
-        max-height: 17rem;
-        background-size: cover;
-        background-position: 0% 15%;
-        background-repeat: no-repeat;
-    }
-    
-    .title-banner {
-        width: 100%;
-        padding: 0.75rem 0 0.5rem 0;
-        background-color: #a0181f;
-    }
-    .title-banner img{
-        width: 85%;
-        min-width: 12rem;
-        padding-right: 3%;
-        background-color: rgb(245, 245, 245, 0.4);
-        border-radius: 0 15px 15px 0;
-    }
-    .page-content {
-        height: 100%;
-        width: 80%;
-        margin: 0;
-        padding: 2rem 10% 4rem 10%;
-        text-align: justify;
+    footer {
+        height: 14rem;
+        /* background-color: #101010; */
+        box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.2);
     }
 
-    .section-button-container {
-        margin: 2rem 15% 2rem 15%;
-        width: 70%;
+    .footer-content {
+        padding: 2rem 0 0 0;
+        font-size: 1rem;
     }
-    .section-button {
-        border-radius: 0.5rem;
-        padding: 1rem 2rem 1rem 2rem;
-        height: 3rem;
-        line-height: 3rem;
+
+    .social-media {
+        margin-left: 47.5vw;
+        margin-right: 47.5vw;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
-}
 
+    .social-media-wrapper {
+        width: 20vw;
+    }
 
-/*      Footer Styles        */
-.footer-mobile {
-    position: absolute;
-    bottom: 0;
-    height: 14rem;
-    width: 100%;
-    background-color: #101010;
-    /* padding-top: 1rem;
-    padding-bottom: 1rem; */
-    box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.2);
-}
-
-.footer-content-mobile {
-    padding: 2rem 0 0 0;
-    color: #fdfdfd;
-    text-align: center;
-    font-size: 1rem;
-}
-
-.social-media-mobile {
-    display: table;
-    margin-left: 40vw;
-    margin-right: 40vw;
-}
-
-.social-media-wrapper-mobile {
-    display: table-row;
-    width: 20vw;
-}
-
-
-.social-media-icon-mobile {
-    display: table-cell;
-    color: #fdfdfd;
-    font-size: 1.5rem;
-    width: 2rem;
-    height: 2rem;
-    padding: 0.5rem;
-}
-.social-media-icon-mobile:hover {
-    color: #a0181f;
+    .social-media-icon {
+        font-size: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+        padding: 0.5rem;
+    }
 }
