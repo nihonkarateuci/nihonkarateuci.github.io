@@ -58,5 +58,5 @@ Additionally, it would be great if you could [minify](https://www.minifier.org) 
 - The flipping bio cards behave strangely on mobile.
 
 ## Build History
-- [v1.0.0-beta](https://github.com/aramuk/nihon-karate-website/releases/tag/v1.0.0-beta): The first iteration of the site was deployed
 - [v1.0.0](https://github.com/aramuk/nihon-karate-website/releases/tag/v1.0.0): First full deployment of website
+- [v1.0.0-beta](https://github.com/aramuk/nihon-karate-website/releases/tag/v1.0.0-beta): The first iteration of the site was deployed

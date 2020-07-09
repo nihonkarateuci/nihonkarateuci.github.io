@@ -1,17 +1,11 @@
+/*      Card matrix      */
 .card-container {
     width: 100%;
     margin: 30px 0 30px 0;
     display: grid;
-    grid-template-columns: 10% 35% 10% 35% 10%;
-    grid-row-gap: 35px;
-}
-.card-container.coach {
-    grid-template-rows: 350px 350px 350px;
-}
-.card-container.officer{
-    grid-template-rows: 350px 350px;
 }
 
+/*      Card styles       */
 .card {
     height: 350px;
     background-color: transparent;
@@ -51,6 +45,7 @@
     overflow-y: scroll;
 }
 
+/*      Portrait        */
 .card-img {
     width: 100%;
     height: 300px;
@@ -58,20 +53,21 @@
     background-color: #dfdfdf;
 }
 
+/*      Bio Text        */
 .card-bio {
     margin: 0 40px 30px 40px;
     text-align: justify;
 }
 
+/*     Person Name      */
 .name {
-    font-size: 22px;
-    margin: -6px 30px 0px 30px;
     height: 50px;
     line-height: 50px;
     text-align: left;
     vertical-align: middle;
 }
 
+/* Officer Position Text */
 .position {
     font-size: 20px;
     font-style: italic;
@@ -79,22 +75,43 @@
     margin: 0px 10px 0px 10px;
 }
 
-/************************/
+/*----------------------*/
+/*    Desktop Styles    */
+/*----------------------*/
+@media only screen and (min-width: 872px) {
+    .card-container {
+        grid-template-columns: 35% 35%;
+        grid-column-gap: 10%;
+        grid-row-gap: 35px;
+        margin-left: 10%;
+    }
+    .card-container.coach {
+        grid-template-rows: 350px 350px 350px;
+    }
+    .card-container.officer {
+        grid-template-rows: 350px 350px;
+    }
+    .name {
+        font-size: 22px;
+        margin: -6px 30px 0px 30px;
+    }
+}
+
+/*----------------------*/
 /*    Mobile Styles     */
-/************************/
+/*----------------------*/
 @media only screen and (max-width: 872px) {
     .card-container {
-        width: 100%;
-        margin: 30px 0 30px 0;
-        display: grid;
-        grid-template-columns: 5% 90% 5%;
+        grid-template-columns: 90%;
+        grid-column-gap: 5%;
         grid-row-gap: 1.5rem;
+        margin-left: 5%;
     }
     .card-container.coach {
         grid-template-rows: auto auto auto auto auto auto auto;
     }
     .card-container.officer {
-        grid-template-rows: auto auto auto auto 2rem;
+        grid-template-rows: auto auto auto auto;
     }
     .name {
         font-size: 1.5rem;

@@ -445,6 +445,7 @@ header {
     .title-banner img {
         min-width: 700px;
         padding-left: 5%;
+        border-radius: 0 15px 15px 0;
     }
 
     /* Header for content pages */
@@ -480,6 +481,7 @@ header {
     .title-banner img {
         width: 85%;
         min-width: 12rem;
+        border-radius: 0 0.5rem 0.5rem 0;
     }
 
     /* Title for content pages */
