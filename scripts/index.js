@@ -30,9 +30,23 @@ document.addEventListener("DOMContentLoaded", e => {
 function renderCircleMenu(topIndex) {
     const items = document.querySelectorAll('.circle a');
 
-    for(let i = 0, len = items.length; i < len; i++) {
+    for (let i = 0, len = items.length; i < len; i++) {
         items[i].style.left = (50 - 35*Math.cos(Math.PI * 2 * topIndex/len - 0.5 * Math.PI - 2*(1/len)*i*Math.PI)).toFixed(4) + "%";
         items[i].style.top = (47 + 35*Math.sin(Math.PI * 2 * topIndex/len - 0.5 * Math.PI - 2*(1/len)*i*Math.PI)).toFixed(4) + "%";
+    }
+}
+
+// Go to the desired page
+function goTo(pageName) {
+    const pages = document.getElementsByClassName('webpage');
+    for (let i = 0; i < pages.length; i++) {        
+        const page = pages[i];
+        if (page.id === pageName) {
+            page.className = 'webpage active';
+            renderCircleMenu(i);
+        } else {
+            page.className = 'webpage';
+        }
     }
 }
 
