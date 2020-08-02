@@ -22,288 +22,166 @@
             <div class="banner">
                 <div class="header-title">Nihon Karate Club</div>
                 <div class="header-subtitle">UC Irvine</div>
-                <nav class="circular-menu">
-                    <div class="circle">
-                        <a href="index.html" class="fa fa-home" title="Home"></a>
-                        <a href="about.html" class="fa fa-users" title="About Us"></a>
-                        <a href="join.html" class="fa fa-user-plus" title="How to Join"></a>
-                        <a href="history.html" class="fa fa-bookmark" title="Club History"></a>
-                        <a href="gallery.html" class="fa fa-photo" title="Photo Gallery"></a>
-                    </div>
-                    <a class="menu-button">
-                        <img src="images/logo.png" width="120px" height="120px">
-                    </a>
-                </nav>
-            </header>
-            <main>
-                <div class="page-image" style="background-image: url(images/join_1.jpg); background-position: 0% 55%;"></div>
-                <div class="title-banner">
-                    <img src="images/banners/banner-join.png">
+                <a href="javascript:void(0);" id="toggle-button" class="toggle-button" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <nav class="circular-menu">
+                <div class="circle">
+                    <a href="index.html" class="fa fa-home" title="Home"></a>
+                    <a href="about.html" class="fa fa-users" title="About Us"></a>
+                    <a href="join.html" class="fa fa-user-plus" title="How to Join"></a>
+                    <a href="history.html" class="fa fa-bookmark" title="Club History"></a>
+                    <a href="gallery.html" class="fa fa-photo" title="Photo Gallery"></a>
+                </div> 
+                <a class="menu-button">
+                    <img src="images/logo.png" width="120px" height="120px">
+                </a>
+            </nav>
+            <nav id="dropdown" class="dropdown">
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="join.html">How to Join</a>
+                    <a href="history.html">History</a>
+                    <a href="gallery.html">Gallery</a>
                 </div>
-                <div class="page-content">
-                    <h3><b>Are you passionate about learning martial arts? Come check out the Nihon Karate Club at UCI!</b></h3>
-                    <p>
-                        We'd be happy to have you join us, whether you're completely new to karate, or a black belt.
-                        We work hard to motivate our members to always strive for their best, while ensuring that they can
-                        feel comfortable learning at their own pace so that all members are adequately challenged at their
-                        respective levels of experience. Do not worry too much about your skill level and if you have not
-                        trained in martial arts before; we are open to teaching everyone who is eager to learn karate.
-                        It is a great opportunity to learn self defense techniques in a safe environment.
-                    </p>
-                    <h3><b>What is karate?</b></h3>
-                    <p>
-                        Karate is an umbrella term for striking martial arts originating from Japan.
-                        The word "karate" translates to "empty hand", referring to the employment of
-                        various kicking, hand, elbow, and knee techniques as opposed to weaponry.
-                        The specific style NKC trains under is <span style="color:#a0181f;">Shindo&#773; jinen-ryu&#773;</span>,
-                        one of the six original schools recognized by Dai Nippon Butoku Kai (the first
-                        government sanctioned martial arts organization in Japan) in the 1930s. In addition
-                        to the standard striking techniques used in most other karate styles,
-                        <span style="color:#a0181f;">Shindo&#773; jinen-ryu&#773;</span> draws influence
-                        from jujitsu, aikido, and kendo. It is politically manifested by the Japan
-                        Karate-do&#773; Ryobu-Kai organization, with branches in 23 countries around the world.
-                    </p>
-                    <h3><b>What do you do in karate?</b></h3>
-                    <p>
-                        We mainly do three types of training: kihon, kata, and kumite. Kihon is a term meaning
-                        "basics" or "fundamentals" and we practice the essential techniques of karate such as stances,
-                        punches, kicks, block, etc. Kata means “way of doing” and we learn a series of movements and techniques
-                        that simulates a real fight. Last but not least, kumite means “sparring” and this is when we execute our
-                        live knowledge in engaging an opponent with what we have learned.
-                    </p>
-                    <img src="images/join_0.jpg" style="float: right; height: 600px; margin: 10px 0 40px 40px;">
-                    <h3><b>Why should I learn karate?</b></h3>
-                    <p>There are numerous physical, mental, and social benefits for learning karate.</p>
-                    <ul>
-                        <li>Physical Benefits:
-                            <ul>
-                                <li>Strengthen your cardiovasular system</li>
-                                <li>Strengthen your core</li>
-                                <li>Increase your flexibility</li>
-                                <li>Enhance your reflexes</li>
-                                <li>Improve balance and agility</li>
-                            </ul>
-                        </li>
-                        <li>Mental Benefits:
-                            <ul>
-                                <li>Build confidence</li>
-                                <li>Learn to overcome fear</li>
-                                <li>Improve mental toughness</li>
-                                <li>Master the art of patience</li>
-                                <li>Greater perseverance in tackling challenges</li>
-                                <li>Learn respect</li>
-                            </ul>
-                        </li>
-                        <li>Social Benefits:
-                            <ul>
-                                <li>Become part of the karate community</li>
-                                <li>Build life-long friendships</li>
-                                <li>Motivate and inspire others</li>
-                                <li>Learn about the art & culture & philosophy of Japan</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h3><b>Why should I join the Nihon Karate Club?</b></h3>
-                    <p>
-                        Being part of the Nihon Karate Club includes:
+            </nav>
+        </header>
+        <main>
+            <div class="page-image" style="background-image: url(images/join_1.jpg); background-position: 0% 55%;"></div>
+            <div class="title-banner">
+                <img src="images/banners/banner-join.png">
+            </div>
+            <div class="page-content">
+                <h3><b>Are you passionate about learning martial arts? Come check out the Nihon Karate Club at UCI!</b></h3>
+                <p>
+                    We'd be happy to have you join us, whether you're completely new to karate, or a black belt.
+                    We work hard to motivate our members to always strive for their best, while ensuring that they can
+                    feel comfortable learning at their own pace so that all members are adequately challenged at their
+                    respective levels of experience. Do not worry too much about your skill level and if you have not
+                    trained in martial arts before; we are open to teaching everyone who is eager to learn karate.
+                    It is a great opportunity to learn self defense techniques in a safe environment.
+                </p>
+                <h3><b>What is karate?</b></h3>
+                <p>
+                    Karate is an umbrella term for striking martial arts originating from Japan.
+                    The word "karate" translates to "empty hand", referring to the employment of
+                    various kicking, hand, elbow, and knee techniques as opposed to weaponry.
+                    The specific style NKC trains under is <span style="color:#a0181f;">Shindo&#773; jinen-ryu&#773;</span>,
+                    one of the six original schools recognized by Dai Nippon Butoku Kai (the first
+                    government sanctioned martial arts organization in Japan) in the 1930s. In addition
+                    to the standard striking techniques used in most other karate styles,
+                    <span style="color:#a0181f;">Shindo&#773; jinen-ryu&#773;</span> draws influence
+                    from jujitsu, aikido, and kendo. It is politically manifested by the Japan
+                    Karate-do&#773; Ryobu-Kai organization, with branches in 23 countries around the world.
+                </p>
+                <h3><b>What do you do in karate?</b></h3>
+                <p>
+                    We mainly do three types of training: kihon, kata, and kumite. Kihon is a term meaning
+                    "basics" or "fundamentals" and we practice the essential techniques of karate such as stances,
+                    punches, kicks, block, etc. Kata means “way of doing” and we learn a series of movements and techniques
+                    that simulates a real fight. Last but not least, kumite means “sparring” and this is when we execute our
+                    live knowledge in engaging an opponent with what we have learned.
+                </p>
+                <img src="images/join_0.jpg" style="float: right; height: 600px; margin: 10px 0 40px 40px;">
+                <h3><b>Why should I learn karate?</b></h3>
+                <p>There are numerous physical, mental, and social benefits for learning karate.</p>
+                <ul>
+                    <li>Physical Benefits:
                         <ul>
-                            <li>Opportunities to compete in tournaments held throughout Southern California</li>
-                            <li>A family-like social network with its own unique culture</li>
-                            <li>Lessons from highly esteemed martial artists</li>
-                            <li>Self-defense, sports, and recreational training</li>
-                            <li>Relief from stress</li>
-                            <li>Promotion of peace and harmony</li>
-                            <li>Fun and exciting club events and activities</li>
+                            <li>Strengthen your cardiovasular system</li>
+                            <li>Strengthen your core</li>
+                            <li>Increase your flexibility</li>
+                            <li>Enhance your reflexes</li>
+                            <li>Improve balance and agility</li>
                         </ul>
-                    </p>
-                    <h3><b>How do I join?</b></h3>
-                    <p>
-                        NKC membership is limited to current UCI students. To sign up, follow these three steps.
-                        <br>
-                        Step 1: You'll first have to make a Club Sports account with the ARC.
-                        There will be a $15 (yearly) fee to register for Club Sports. Follow this
-                        <a href="https://www.campusrec.uci.edu/club/join.asp">link</a> for more details.
-                        <br>
-                        Step 2: Register to the karate club <a href="https://www.campusrec.uci.edu/classes/martial/index.asp">here</a>.
-                        There will be a $45 quarterly fee. This will ensure that you become a karate club member.
-                        <br>
-                        Step 3: Club membership consists of a quarterly $10 fee or $45 yearly fee to cover
-                        tournament, travel, and equipment fees.
-                    </p>
-                    <h3><strong>Covid-19 Update:</strong></h3>
-                    <p><strong>
-                      In order to ensure our members’ safety, we are no longer conducting an in-person
-                      training session. Instead, we are using an application called Zoom and have our
-                      Sensei or Senpai teach us online. Our current schedule is Wednesday 18:00-19:00
-                      and Saturday 10:00-11:00 and 13:00-14:30. Anyone is welcome to join, and feel
-                      free to reach out to us at <a href="mailto:karate@uci.edu">karate@uci.edu</a> for more information.
-                    </strong></p>
-                    <p>
-                        For Fall quarter, the $10 fee will not be required because we will host training online.
-                        For upcoming quarters if karate training is in person, then the $10 will be required.
-                    </p>
-                    <h3><b>I'm not sure about this whole karate thing...</b></h3>
-                    <p>
-                        Don't worry, we've all been there. If you're still on the fence, then we'd
-                        recommend dropping by one of our zoom practices. Feel free to come check out
-                        the practices before payment. You don't need a gi, but make sure to bring something you can work out in.
-                    </p>
-                    <h3><b>I have some other questions.</b></h3>
-                    <p>
-                        Feel free to send an email to the officers at
-                        <a href="mailto:karate@uci.edu">karate@uci.edu</a>, and
-                        we'll be happy to answer any of your additional questions.
-                        We have a <a href="https://www.facebook.com/groups/ucikarate">facebook</a> page where you can find more information
-                        about our club and keep up to date on current club events. We also have an
-                        <a href="https://www.instagram.com/ucikarate/">instagram</a> page which you can follow to see cool karate videos and pictures.
-                    </p>
-                </div>
-            </main>
-            <footer class="footer-desktop">
-                <div class="footer-content">
-                    <span>Follow us on social media</span>
-                    <div class="social-media">
-                        <div class="social-media-wrapper">
-                            <a class="social-media-icon" href="https://www.facebook.com/nihonkarateclubatuci/" target="_blank" title="Like our Facebook page"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a class="social-media-icon" href="https://www.instagram.com/ucikarate/" target="_blank" title="Follow us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <address>
-                        Contact: <a class="email" href="mailto:karate@uci.edu">karate@uci.edu</a>
-                    </address>
-                    <span>&copy; 2009-<script type="text/javascript">document.write(new Date().getFullYear());</script> Nihon Karate Club at UC Irvine</span>
-                </div>
-            </footer>
-        </div>
-        <div class="page-container-mobile">
-            <header class="header-mobile">
-                <button id="toggle-button" class="toggle-button gray-text" onclick="toggleMenu()">&#9776;</button>
-                <div class="mobile-header-title">Nihon Karate Club</div>
-                <div class="mobile-header-subtitle">UC Irvine</div>
-                <div id="menu" class="menu">
-                    <div class="menu-content">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About Us</a>
-                        <a href="join.html">How to Join</a>
-                        <a href="history.html">History</a>
-                        <a href="gallery.html">Gallery</a>
-                    </div>
-                </div>
-            </header>
-            <main>
-                <div class="page-image" style="background-image: url(images/join_1.jpg); background-position: 0% 55%;"></div>
-                <div class="title-banner">
-                    <img src="images/banners/banner-join.png">
-                </div>
-                <div class="page-content">
-                    <h3><b>So, you wanna join the Nihon Karate Club...</b></h3>
-                    <p>
-                        Great!<br><br>
-                        We'd be happy to have you join us, whether you're completely new to karate, or a black belt.
-                        We work hard to motivate our members to always strive for their best,
-                        while ensuring that they can feel comfortable learning at their own pace so that all
-                        members are adequately challenged at their respective levels of experience.
-                    </p>
-                    <h3><b>What is karate?</b></h3>
-                    <p>
-                        Karate is an umbrella term for striking martial arts originating from Japan.
-                        The word "karate" translates to "empty hand", referring to the employment of
-                        various kicking, hand, elbow, and knee techniques as opposed to weaponry.
-                        The specific style NKC trains under is <span style="color:#a0181f;">Shindo&#773; jinen-ryu&#773;</span>,
-                        one of the six original schools recognized by Dai Nippon Butoku Kai (the first
-                        government sanctioned martial arts organization in Japan) in the 1930s. In addition
-                        to the standard striking techniques used in most other karate styles,
-                        <span style="color:#a0181f;">Shindo&#773; jinen-ryu&#773;</span> draws influence
-                        from jujitsu, aikido, and kendo. It is politically manifested by the Japan
-                        Karate-do&#773; Ryobu-Kai organization, with branches in 23 countries around the world.
-                    </p>
-                    <img src="images/join_0.jpg" style="width: 100%;">
-                    <h3><b>Why should I learn karate?</b></h3>
-                    <p>There are a number of physical, mental, and social benefits of learning karate.</p>
-                    <ul>
-                        <li>Physical Benefits:
-                            <ul>
-                                <li>Strengthen your cardiovasular system</li>
-                                <li>Strengthen your core</li>
-                                <li>Increase your flexibility</li>
-                                <li>Enhance your reflexes</li>
-                            </ul>
-                        </li>
-                        <li>Mental Benefits:
-                            <ul>
-                                <li>Build confidence</li>
-                                <li>Learn to overcome fear</li>
-                            </ul>
-                        </li>
-                        <li>Social Benefits:
-                            <ul>
-                                <li>Become part of a larger community</li>
-                                <li>Build life-long friendships</li>
-                                <li>Learn about the art & culture & philosophy of Japan</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h3><b>Why should I join the Nihon Karate Club?</b></h3>
-                    <p>Being part of the Nihon Karate Club includes:</p>
+                    </li>
+                    <li>Mental Benefits:
+                        <ul>
+                            <li>Build confidence</li>
+                            <li>Learn to overcome fear</li>
+                            <li>Improve mental toughness</li>
+                            <li>Master the art of patience</li>
+                            <li>Greater perseverance in tackling challenges</li>
+                            <li>Learn respect</li>
+                        </ul>
+                    </li>
+                    <li>Social Benefits:
+                        <ul>
+                            <li>Become part of the karate community</li>
+                            <li>Build life-long friendships</li>
+                            <li>Motivate and inspire others</li>
+                            <li>Learn about the art & culture & philosophy of Japan</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3><b>Why should I join the Nihon Karate Club?</b></h3>
+                <p>
+                    Being part of the Nihon Karate Club includes:
                     <ul>
                         <li>Opportunities to compete in tournaments held throughout Southern California</li>
                         <li>A family-like social network with its own unique culture</li>
                         <li>Lessons from highly esteemed martial artists</li>
                         <li>Self-defense, sports, and recreational training</li>
-                        <li>Relief from stress and improvements in mental and physical health</li>
+                        <li>Relief from stress</li>
                         <li>Promotion of peace and harmony</li>
                         <li>Fun and exciting club events and activities</li>
                     </ul>
-                    <h3><b>How do I join?</b></h3>
-                    <p>
-                        NKC membership is limited to current UCI students. To sign up, you'll first
-                        have to make a Club Sports account with the ARC. Follow this
-                        <a href="https://www.campusrec.uci.edu/club/join.asp">link</a> for more details.
-                        In general, you'll have to pay a yearly $15 Club Sports registration fee and
-                        complete a concussion baseline test (if you do not have one on record with
-                        the ARC already). After that, club membership consists of a quarterly $10
-                        fee to cover tournament, travel, and equipment fees.
-                    </p>
-                    <h3><strong>Covid-19 Update:</strong></h3>
-                    <p><strong>
-                      In order to ensure our members’ safety, we are no longer conducting an in-person
-                      training session. Instead, we are using an application called Zoom and have our
-                      Sensei or Senpai teach us online. Our current schedule is Wednesday 18:00-19:00
-                      and Saturday 10:00-11:00 and 13:00-14:30. Anyone is welcome to join, and feel
-                      free to reach out to us at <a href="mailto:karate@uci.edu">karate@uci.edu</a> for more information.
-                    </strong></p>
-                    <h3><b>I'm not sure about this whole karate thing...</b></h3>
-                    <p>
-                        Don't worry, we've all been there. If you're still on the fence,
-                        then we'd recommend dropping by one of our Thursday practices.
-                        They're at the ARC in the Activity Annex, from 7:30-9:00pm.
-                        You don't need a gi, but make sure to bring something you can work out in.
-                    </p>
-                    <h3><b>I have some other questions.</b></h3>
-                    <p>
-                        Feel free to send an email to the officers at
-                        <a href="mailto:karate@uci.edu">karate@uci.edu</a>, and
-                        we'll be happy to answer any of your additional questions.
-                    </p>
-                </div>
-            </main>
-            <footer class="footer-mobile">
-                <div class="footer-content-mobile">
-                    <span>Follow us on social media</span>
-                    <div class="social-media-mobile">
-                        <div class="social-media-wrapper-mobile">
-                            <a class="social-media-icon-mobile" href="https://www.facebook.com/nihonkarateclubatuci/" target="_blank" title="Like our Facebook page">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                            <a class="social-media-icon-mobile" href="https://www.instagram.com/ucikarate/" target="_blank" title="Follow us on Instagram">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                        </div>
+                </p>
+                <h3><b>How do I join?</b></h3>
+                <p>
+                    NKC membership is limited to current UCI students. To sign up, follow these three steps.
+                    <br>
+                    Step 1: You'll first have to make a Club Sports account with the ARC.
+                    There will be a $15 (yearly) fee to register for Club Sports. Follow this
+                    <a href="https://www.campusrec.uci.edu/club/join.asp">link</a> for more details.
+                    <br>
+                    Step 2: Register to the karate club <a href="https://www.campusrec.uci.edu/classes/martial/index.asp">here</a>.
+                    There will be a $45 quarterly fee. This will ensure that you become a karate club member.
+                    <br>
+                    Step 3: Club membership consists of a quarterly $10 fee or $45 yearly fee to cover
+                    tournament, travel, and equipment fees.
+                </p>
+                <h3><strong>Covid-19 Update:</strong></h3>
+                <p>
+                    <strong>
+                        In order to ensure our members&apos; safety, we are no longer conducting an in-person
+                        training session. Instead, we are using an application called Zoom and have our
+                        Sensei or Senpai teach us online. Our current schedule is Wednesday 18:00-19:00
+                        and Saturday 10:00-11:00 and 13:00-14:30. Anyone is welcome to join, and feel
+                        free to reach out to us at <a href="mailto:karate@uci.edu">karate@uci.edu</a> for more information.
+                    </strong>
+                </p>
+                <p>
+                    For Fall quarter, the $10 fee will not be required because we will host training online.
+                    For upcoming quarters if karate training is in person, then the $10 will be required.
+                </p>
+                <h3><b>I'm not sure about this whole karate thing...</b></h3>
+                <p>
+                    Don't worry, we've all been there. If you're still on the fence, then we'd
+                    recommend dropping by one of our Zoom practices. Feel free to come check out
+                    the practices before payment. You don't need a gi, but make sure to bring something you can work out in.
+                </p>
+                <h3><b>I have some other questions.</b></h3>
+                <p>
+                    Feel free to send an email to the officers at
+                    <a href="mailto:karate@uci.edu">karate@uci.edu</a>, and
+                    we'll be happy to answer any of your additional questions.
+                    We have a <a href="https://www.facebook.com/groups/ucikarate">facebook</a> page where you can find more information
+                    about our club and keep up to date on current club events. We also have an
+                    <a href="https://www.instagram.com/ucikarate/">instagram</a> page which you can follow to see cool karate videos and pictures.
+                </p>
+            </div>
+        </main>
+        <footer class="footer-desktop">
+            <div class="footer-content">
+                <span>Follow us on social media</span>
+                <div class="social-media">
+                    <div class="social-media-wrapper">
+                        <a class="social-media-icon" href="https://www.facebook.com/nihonkarateclubatuci/" target="_blank" title="Like our Facebook page"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a class="social-media-icon" href="https://www.instagram.com/ucikarate/" target="_blank" title="Follow us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </div>
-                    <address>
-                        Contact: <a class="email" href="mailto:karate@uci.edu">karate@uci.edu</a>
-                    </address>
-                    <span>&copy; 2009-<script type="text/javascript">document.write(new Date().getFullYear());</script> Nihon Karate Club at UC Irvine</span>
                 </div>
                 <address>
                     Contact: <a class="email" href="mailto:karate@uci.edu">karate@uci.edu</a>
