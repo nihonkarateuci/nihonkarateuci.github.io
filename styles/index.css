@@ -435,7 +435,7 @@ header {
 @media only screen and (min-width: 872px) {
     /* Image at the top of the page */
     .page-image {
-        height: 950px;
+        height: 550px;
     }
 
     /* Title for content pages */
