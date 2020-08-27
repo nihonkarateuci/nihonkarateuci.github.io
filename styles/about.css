@@ -1,15 +1,16 @@
 .card-container {
     width: 100%;
-    margin: 30px 0 30px 0;
+    margin: 30px 10% 30px 10%;
     display: grid;
-    grid-template-columns: 10% 35% 10% 35% 10%;
+    grid-template-columns: 35% 35%;
+    grid-column-gap: 10%;
     grid-row-gap: 35px;
 }
 .card-container.coach {
     grid-template-rows: 350px 350px 350px;
 }
 .card-container.officer{
-    grid-template-rows: 350px 350px;
+    grid-template-rows: 350px 350px 350px;
 }
 
 .card {
@@ -85,16 +86,17 @@
 @media only screen and (max-width: 872px) {
     .card-container {
         width: 100%;
-        margin: 30px 0 30px 0;
+        margin: 30px 5% 30px 5%;
         display: grid;
-        grid-template-columns: 5% 90% 5%;
+        grid-template-columns: 90%;
         grid-row-gap: 1.5rem;
     }
     .card-container.coach {
         grid-template-rows: auto auto auto auto auto auto auto;
     }
     .card-container.officer {
-        grid-template-rows: auto auto auto auto 2rem;
+        grid-template-rows: auto auto auto auto auto auto;
+        margin-bottom: 2rem;
     }
     .name {
         font-size: 1.5rem;
