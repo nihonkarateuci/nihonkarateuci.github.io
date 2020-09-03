@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
     <url>
-        <loc>https://www.clubs.uci.edu/index.html</loc>
-        <lastmod>2019-10-01</lastmod>
-    </url>
-        <url>
-        <loc>https://www.clubs.uci.edu/about.html</loc>
-        <lastmod>2019-09-15</lastmod>
+        <loc>https://nihonkarateuci.com/</loc>
+        <lastmod>2020-09-03</lastmod>
     </url>
     <url>
-        <loc>https://www.clubs.uci.edu/join.html</loc>
-        <lastmod>2019-09-15</lastmod>
-    </url>
-    <url>
-        <loc>https://www.clubs.uci.edu/history.html</loc>
-        <lastmod>2019-09-15</lastmod>
+        <loc>https://nihonkarateuci.com/index.html</loc>
+        <lastmod>2020-09-03</lastmod>
     </url>
         <url>
-        <loc>https://www.clubs.uci.edu/gallery.html</loc>
-        <lastmod>2019-09-15</lastmod>
+        <loc>https://nihonkarateuci.com/about.html</loc>
+		<lastmod>2020-09-03</lastmod>
+		<lastmod>2019-09-3</lastmod>
+    </url>
+    <url>
+        <loc>https://nihonkarateuci.com/join.html</loc>
+        <lastmod>2020-09-03</lastmod>
+    </url>
+    <url>
+        <loc>https://nihonkarateuci.com/history.html</loc>
+        <lastmod>2020-09-03</lastmod>
+    </url>
+        <url>
+        <loc>https://nihonkarateuci.com/gallery.html</loc>
+		<lastmod>2020-09-03</lastmod>
     </url>
 </urlset>
