@@ -395,6 +395,12 @@ header {
     background-color: rgb(245, 245, 245, 0.4);
 }
 
+/* Images for content pages */
+.content-image {
+    padding: 40px;
+    width: 50%;
+}
+
 /* Content sections (as seen on home page) */
 .section {
     padding-bottom: 1rem;
@@ -418,7 +424,7 @@ header {
     display: inline-block;
 }
 
-/* Title for content pages */
+/* Text for content pages */
 .page-content {
     height: 100%;
     font-size: 1.1rem;
@@ -448,10 +454,18 @@ header {
         border-radius: 0 15px 15px 0;
     }
 
-    /* Header for content pages */
+    /* Text for content pages */
     .page-content {
         width: 65%;
         margin: 75px 17.5% 75px 17.5%;
+    }
+
+    /* Images for content pages */
+    .content-image.right {
+        float: right;
+    }
+    .content-image.left {
+        float: left;
     }
 
     /* Content sections (as seen on home page) */
@@ -471,7 +485,7 @@ header {
 @media only screen and (max-width: 872px) {
     /* Image at the top of the page */
     .page-image {
-        max-height: 17rem;
+        height: 17rem;
     }
 
     /* Title for content pages */
@@ -489,6 +503,13 @@ header {
         width: 80%;
         margin: 0;
         padding: 2rem 10% 4rem 10%;
+    }
+
+    /* Images for content pages */
+    .content-image {
+        width: 100%;
+        padding: 0;
+        float: center;
     }
 
     /* Use with anchor tags to jump below header */
