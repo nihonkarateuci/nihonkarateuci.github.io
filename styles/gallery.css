@@ -1,16 +1,5 @@
 .image-gallery {
-    width: 100%;
     display: grid;
-    grid-template-columns: 50px auto 20px auto 20px auto 50px;
-    grid-template-rows: 0px 50vh 50vh 50vh 50vh 50vh 30px;
-    grid-row-gap: 20px;
-}
-.image-gallery-new {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50px auto 20px auto 20px auto 50px;
-    grid-template-rows: 30px 50vh 50vh 50vh 50vh;
-    grid-row-gap: 20px;
 }
 .image-gallery img {
     width: 100%;
@@ -24,35 +13,72 @@
 }
 
 /************************/
+/*    Desktop Styles    */
+/************************/
+@media only screen and (min-width: 872px) {
+    .image-gallery {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 50vh 55vh 55vh 55vh 55vh 50vh 50vh 50vh;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        margin: 30px;
+    }
+    .image-gallery img.c1-c3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .image-gallery img.c1-c2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .image-gallery img.c2-c4{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .image-gallery img.c3-c4{
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    .image-gallery img.r3-r4 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .image-gallery img.r3-r5 {
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .image-gallery img.r4-r5 {
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .image-gallery img.r7-r8 {
+        grid-row-start: 7;
+        grid-row-end: 8;
+    }
+    .image-gallery img.r7-r9 {
+        grid-row-start: 7;
+        grid-row-end: 9;
+    }
+    .image-gallery img.r8-r9 {
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
+}
+
+/************************/
 /*    Mobile Styles     */
 /************************/
 @media only screen and (max-width: 872px) {
     .image-gallery {
         width: 90%;
-        display: grid;
-        margin: 0;
-        padding: 0rem 5% 1.5rem 5%;
+        margin-top: 3rem;
+        padding: 0rem 5% 0 5%;
         grid-template-columns: auto;
-        grid-template-rows: 40vh 40vh 45vh 45vh 40vh 45vh 45vh 40vh 30vh 50vh;
-        grid-row-gap: 1.5rem;
-    }
-    .image-gallery-new {
-        width: 90%;
-        display: grid;
-        margin: 0;
-        padding: 1.5rem 5% 1.5rem 5%;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
+        grid-template-rows: 30vh 30vh 40vh 40vh 30vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh;
         grid-row-gap: 1.5rem;
     }
     .image-gallery img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .image-gallery-new img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 }
