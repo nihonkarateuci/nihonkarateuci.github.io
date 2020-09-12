@@ -186,16 +186,15 @@ header {
 /*      Club Name Header      */
 .header-title {
     position: absolute;
-    font-size: 56px;
     font-family: "Cinzel", serif;
     color: #dfdfdf;
-    right: 75px;
-    top: 50px;
+    margin: 0;
 }
 .header-subtitle {
     position: absolute;
     font-family: "Cinzel", serif;
     color: #a0181f;
+    margin: 0;
 }
 @media only screen and (min-width: 872px) {
     .header-title {
