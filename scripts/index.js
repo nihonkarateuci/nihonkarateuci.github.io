@@ -13,7 +13,7 @@ function toggleMenu() {
 }
 
 // On page load, render circle menu
-document.addEventListener("DOMContentLoaded", e => { 
+document.addEventListener("DOMContentLoaded", e => {
     renderCircleMenu(0);
 
     // Set circle menu to open
