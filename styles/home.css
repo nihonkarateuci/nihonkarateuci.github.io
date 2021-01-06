@@ -66,11 +66,17 @@
 }
 
 /* Explore Section */
+
+
 .explore-container {
     display: grid;
-    margin: 0 50px 20px 50px;
+    margin: 20px 50px 20px 50px;
     grid-template-columns: 22% 22% 22% 22%;
     grid-column-gap: 3%;
+}
+.explore-container.sticky {
+    position: fixed;
+    top: 0;
 }
 
 .explore-card {
