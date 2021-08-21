@@ -3,6 +3,7 @@ NKCConfig = NKCConfig || {};
 function render() {
   showAnnouncement();
   renderEventsCalendar();
+  renderPracticeSchedule();
 }
 
 // Opens and closes mobile menu
@@ -38,46 +39,35 @@ function renderCircleMenu(topIndex) {
   const items = document.querySelectorAll(".circle a");
 
   for (let i = 0, len = items.length; i < len; i++) {
-    items[i].style.left =
-      (
-        50 -
-        35 *
-          Math.cos(
-            (Math.PI * 2 * topIndex) / len -
-              0.5 * Math.PI -
-              2 * (1 / len) * i * Math.PI
-          )
-      ).toFixed(4) + "%";
-    items[i].style.top =
-      (
-        47 +
-        35 *
-          Math.sin(
-            (Math.PI * 2 * topIndex) / len -
-              0.5 * Math.PI -
-              2 * (1 / len) * i * Math.PI
-          )
-      ).toFixed(4) + "%";
+    // prettier-ignore
+    items[i].style.left = (50 - 35 * Math.cos((Math.PI * 2 * topIndex) / len - 0.5 * Math.PI - 2 * (1 / len) * i * Math.PI)).toFixed(4) + "%";
+    // prettier-ignore
+    items[i].style.top = (47 + 35 * Math.sin((Math.PI * 2 * topIndex) / len - 0.5 * Math.PI - 2 * (1 / len) * i * Math.PI)).toFixed(4) + "%";
   }
 }
 
-// Shows the announcement if the user has not seen it within the last day
+// Shows the announcement if the user has not seen it within the last day.
 function showAnnouncement() {
   const timeout = getCookieData("timeout");
   if (
     !timeout ||
-    // Extract timeout from cookie and compare to current date
+    // Extract timeout from cookie and compare to current date.
     new Date(timeout.substring("timeout=".length, timeout.length)) < new Date()
   ) {
     document.getElementById("announcement").style.opacity = 100;
   }
 }
 
+// Renders the calendar of upcoming events.
 function renderEventsCalendar() {
-  // Load schedule and sort by date
+  // Load event calendar and sort by date.
   let calendar = (NKCConfig?.events?.calendar || []).sort(
     (a, b) => a.date - b.date
   );
+  // Remove past events if there are more than 3 events to display in calendar.
+  if (calendar.length > 3) {
+    calendar = calendar.filter(event => event.date > Date.now());
+  }
   // Trim schedule to 3 or 6 events.
   calendar = calendar.slice(
     0,
@@ -91,13 +81,16 @@ function renderEventsCalendar() {
     day: "numeric",
   };
 
+  // Render each event from the calendar into the #events-calendar div.
   const root = document.getElementById("events-calendar");
   for (const event of calendar) {
     const eventCard = document.createElement("div");
     eventCard.className = "grid-card shadow white";
 
     const background = document.createElement("div");
-    background.style["background-image"] = `url(${event.image})`;
+    background.style["background-image"] = `url(${event.image.path})`;
+    background.style["background-position-x"] = event.image.x || "50%";
+    background.style["background-position-y"] = event.image.y || "50%";
     eventCard.appendChild(background);
 
     const name = document.createElement("h3");
@@ -118,9 +111,46 @@ function renderEventsCalendar() {
     const desc = document.createElement("p");
     desc.innerText = event.description;
     eventCard.appendChild(desc);
-    console.log(eventCard);
 
     root.appendChild(eventCard);
+  }
+}
+
+function renderPracticeSchedule() {
+  // Load practice schedule.
+  let schedule = NKCConfig?.practice?.schedule || [];
+
+  const root = document.getElementById("practice-schedule");
+  // Set the styling for the practice schedule based on its size.
+  const containerClass =
+    schedule.length == 3 ? "three-card-container" : "four-card-container";
+  root.classList.add(containerClass);
+
+  // Render each event from the schedule into the #practice-schedule div.
+  for (const practice of schedule) {
+    const practiceCard = document.createElement("div");
+    practiceCard.className = "grid-card shadow white";
+
+    const background = document.createElement("div");
+    background.style["background-image"] = `url(${practice.image.path})`;
+    background.style["background-position-x"] = practice.image.x || "50%";
+    background.style["background-position-y"] = practice.image.y || "50%";
+    practiceCard.appendChild(background);
+
+    const name = document.createElement("h2");
+    name.innerText = practice.name;
+    practiceCard.appendChild(name);
+
+    const desc = document.createElement("p");
+    desc.style["text-align"] = "center";
+    desc.innerHTML =
+      `${practice.start_time}-${practice.end_time}` +
+      "<br/>" +
+      `${practice.location}` +
+      "<br/>";
+    practiceCard.appendChild(desc);
+
+    root.appendChild(practiceCard);
   }
 }
 

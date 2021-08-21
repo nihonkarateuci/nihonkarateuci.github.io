@@ -1,10 +1,14 @@
 NKCConfig = NKCConfig || {};
 
+// Calendar of events to include on the home page.
 NKCConfig.events = Object.freeze({
   calendar: [
     {
       name: "Anteater Involvement Fair",
-      image: "images/home/AIFDay1.jpg",
+      image: {
+        path: "images/home/AIFDay1.jpg",
+        y: "30%",
+      },
       location: "Aldrich Park",
       date: new Date((year = 2021), (month = 09), (date = 20), (hours = 11)),
       start_time: "11am",
@@ -15,7 +19,9 @@ NKCConfig.events = Object.freeze({
     },
     {
       name: "Late Night with Campus Recreation",
-      image: "images/home/latenight.jpg",
+      image: {
+        path: "images/home/latenight.jpg",
+      },
       location: "ARC",
       date: new Date((year = 2021), (month = 09), (date = 20), (hours = 20)),
       start_time: "8pm",
@@ -26,7 +32,9 @@ NKCConfig.events = Object.freeze({
     },
     {
       name: "Quarterly Beach Workout",
-      image: "images/home/beach.jpg",
+      image: {
+        path: "images/home/beach.jpg",
+      },
       location: "Salt Creek Beach",
       date: new Date((year = 2021), (month = 09), (date = 26), (hours = 10)),
       start_time: "10am",
