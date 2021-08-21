@@ -162,3 +162,10 @@ function closeAnnouncement() {
   document.cookie = "timeout=" + timeout.toISOString();
   document.getElementById("announcement").style.opacity = 0;
 }
+
+function fillEmail() {
+  for (const elem of document.getElementsByClassName("email")) {
+    elem.innerText = NKCConfig.email;
+    elem.href = `mailto:${NKCConfig.email}`;
+  }
+}

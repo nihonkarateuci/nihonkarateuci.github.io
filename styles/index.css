@@ -563,6 +563,8 @@ footer {
 
 .social-media-icon {
     display: table-cell;
+    background-color: #030303;
+    border-radius: 3rem;
     color: #dfdfdf;
 }
 .social-media-icon:hover {

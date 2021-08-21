@@ -30,7 +30,7 @@
         <link rel="icon" href="images/favicon.ico">
         <title>Nihon Karate Club at UCI</title>
     </head>
-    <body onload="render()">
+    <body onload="render(); fillEmail();">
         <div id="announcement" class="announcement black-text shadow">
             <span>Download our 2020 Welcome Week Flyer <a href="resources/welcome-week-flyer-2020.pdf" target=_blank download>here</a>!</span>
             <span onclick="closeAnnouncement();" id="close-announcement" class="close-announcement red-text">&times;</span>
@@ -148,9 +148,9 @@
                     </div>
                 </div>
                 <address>
-                    Contact: <a class="email" href="mailto:karate@uci.edu">karate@uci.edu</a>
+                    Contact: <a class="email"></a>
                 </address>
-                <span>&copy; 2009-<script type="text/javascript">document.write(new Date().getFullYear());</script> Nihon Karate Club at UC Irvine</span>
+                <span>Copyright 2009-<script type="text/javascript">document.write(new Date().getFullYear());</script> Nihon Karate Club at UC Irvine</span>
             </div>
         </footer>
     </body>
