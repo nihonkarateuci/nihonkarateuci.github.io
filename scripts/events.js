@@ -45,3 +45,62 @@ NKCConfig.events = Object.freeze({
     },
   ],
 });
+
+
+// Renders the calendar of upcoming events.
+function renderEventsCalendar() {
+  // Load event calendar and sort by date.
+  let calendar = (NKCConfig?.events?.calendar || []).sort(
+    (a, b) => a.date - b.date
+  );
+  // Remove past events if there are more than 3 events to display in calendar.
+  if (calendar.length > 3) {
+    calendar = calendar.filter((event) => event.date > Date.now());
+  }
+  // Trim schedule to 3 or 6 events.
+  calendar = calendar.slice(
+    0,
+    Math.min(6, 3 * Math.floor(calendar.length / 3))
+  );
+
+  const dateOptions = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+
+  // Render each event from the calendar into the #events-calendar div.
+  const root = document.getElementById("events-calendar");
+  for (const event of calendar) {
+    const eventCard = document.createElement("div");
+    eventCard.className = "grid-card shadow white";
+
+    const background = document.createElement("div");
+    background.style["background-image"] = `url(${event.image.path})`;
+    background.style["background-position-x"] = event.image.x || "50%";
+    background.style["background-position-y"] = event.image.y || "50%";
+    eventCard.appendChild(background);
+
+    const name = document.createElement("h3");
+    name.innerText = event.name;
+    name.className = "shadow red white-text";
+    eventCard.appendChild(name);
+
+    const date = document.createElement("b");
+    date.innerText = event.date.toLocaleDateString("en-US", dateOptions);
+    eventCard.appendChild(date);
+    eventCard.appendChild(document.createElement("br"));
+
+    const time = document.createElement("b");
+    time.innerText = `${event.start_time} - ${event.end_time} @ ${event.location}`;
+    eventCard.appendChild(time);
+    eventCard.appendChild(document.createElement("br"));
+
+    const desc = document.createElement("p");
+    desc.innerText = event.description;
+    eventCard.appendChild(desc);
+
+    root.appendChild(eventCard);
+  }
+}

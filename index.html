@@ -26,11 +26,12 @@
         <script src="scripts/cookies.js" type="text/javascript"></script>
         <script src="scripts/events.js" type="text/javascript"></script>
         <script src="scripts/practice.js" type="text/javascript"></script>
+        <script src="scripts/home.js" type="text/javascript"></script>
         <script src="scripts/index.js" type="text/javascript"></script>
         <link rel="icon" href="images/favicon.ico">
         <title>Nihon Karate Club at UCI</title>
     </head>
-    <body onload="render(); fillEmail();">
+    <body>
         <div id="announcement" class="announcement black-text shadow">
             <span>Download our 2020 Welcome Week Flyer <a href="resources/welcome-week-flyer-2020.pdf" target=_blank download>here</a>!</span>
             <span onclick="closeAnnouncement();" id="close-announcement" class="close-announcement red-text">&times;</span>
@@ -107,7 +108,7 @@
             <a id="schedule" class="anchor"></a>
             <div class="section red white-text">
                 <span class="floater">Practice Schedule</span>
-                <div id="practice-schedule" class="three-card-container black-text"></div>
+                <div id="practice-schedule" class="black-text"></div>
                 <div class="section-button-container">
                     <a class="section-button white black-text shadow" href="https://calendar.google.com/calendar/b/3?cid=dWNpLmVkdV9sOWZkZDMydTFqbXFjNnN1cHNlMG85cWpjb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Add To My Calendar</a>
                 </div>
