@@ -10,7 +10,7 @@
     grid-template-rows: 350px 350px 350px;
 }
 .card-container.officer{
-    grid-template-rows: 350px 350px 350px;
+    grid-template-rows: 350px 350px;
 }
 
 .card {

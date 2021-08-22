@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146767549-1"></script>
         <script>
@@ -14,9 +16,13 @@
         <meta name="description" content="Get an idea of some regulars at our karate dojo! This page
             will introduce you to our various Senseis, Senpais, and officers, who help make the
             Nihon Karate Club at UC Irvine in its daily affairs.">
+        <!--Load stylesheets-->
         <link rel="stylesheet" href="styles/index.css" type="text/css">
         <link rel="stylesheet" href="styles/about.css" type="text/css">
         <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <!--Load scripts-->
+        <script src="scripts/init.js" type="text/javascript"></script>
+        <script src="scripts/cookies.js" type="text/javascript"></script>
         <script src="scripts/index.js" type="text/javascript"></script>
         <link rel="icon" href="images/favicon.ico">
         <title>Nihon Karate Club at UCI</title>
@@ -242,16 +248,40 @@
                 <div class="card">
                     <div class="card-content shadow">
                         <div class="card-front">
+                            <img class="card-img" src="images/portraits/marcus.jpg">
+                            <div class="name">
+                                <span>Marcus Freitas</span>
+                                <span class="position">President</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3><b>Marcus Freitas</b></h3>
+                            <p class="card-bio">
+                                I'm a 4th year at UCI, majoring in Mechanical Engineering.
+                                <br><br>
+                                I started karate in my first year with no previous experience in martial arts. I had always wanted to learn to fight,
+                                and after seeing a demonstration of karate at the ARC I decided to join Nihon Karate Club at UCI. At first I was just trying
+                                it out to see if I would enjoy it, but now karate has become one of my passions in life. Every time I attend a training, I feel
+                                like I’m making a step towards becoming a better and stronger person. The community is very welcoming, and I have been learning a
+                                lot from Sensei Bruce Nguyen and all of the others who also pursue karate. I hope to continue training throughout college, and I am
+                                grateful to be part of the karate community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content shadow">
+                        <div class="card-front">
                             <img class="card-img" src="images/portraits/aditesh.jpg">
                             <div class="name">
                                 <span>Aditesh Kumar</span>
-                                <span class="position">President</span>
+                                <span class="position">Vice President</span>
                             </div>
                         </div>
                         <div class="card-back">
                             <h3><b>Aditesh Kumar</b></h3>
                             <p class="card-bio">
-                                I'm a 3rd year at UCI, double majoring in Computer Science and Criminology.
+                                I'm a 4th year at UCI, double majoring in Computer Science and Criminology.
                                 <br><br>
                                 I first started practicing Karate in January 2007, under the Shotokan style.
                                 I am currently a shodan in that style.
@@ -268,30 +298,6 @@
                 <div class="card">
                     <div class="card-content shadow">
                         <div class="card-front">
-                            <img class="card-img" src="images/portraits/marcus.jpg">
-                            <div class="name">
-                                <span>Marcus Freitas</span>
-                                <span class="position">Vice President</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3><b>Marcus Freitas</b></h3>
-                            <p class="card-bio">
-                                I'm a 3rd year at UCI, majoring in Mechanical Engineering.
-                                <br><br>
-                                I started karate in my first year with no previous experience in martial arts. I had always wanted to learn to fight,
-                                and after seeing a demonstration of karate at the ARC I decided to join Nihon Karate Club at UCI. At first I was just trying
-                                it out to see if I would enjoy it, but now karate has become one of my passions in life. Every time I attend a training, I feel
-                                like I’m making a step towards becoming a better and stronger person. The community is very welcoming, and I have been learning a
-                                lot from Sensei Bruce Nguyen and all of the others who also pursue karate. I hope to continue training throughout college, and I am
-                                grateful to be part of the karate community.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content shadow">
-                        <div class="card-front">
                             <img class="card-img" src="images/portraits/james.jpg">
                             <div class="name">
                                 <span>James Patricio</span>
@@ -301,7 +307,7 @@
                         <div class="card-back">
                             <h3><b>James Patricio</b></h3>
                             <p class="card-bio">
-                                I'm a second-year at UCI, majoring in Public Health Science.
+                                I'm a 3rd year at UCI, majoring in Public Health Science.
                                 <br><br>
                                 I joined Nihon Karate Club at UCI because I had been very devoted and passionate about karate in the past
                                 and wanted to continue that passion in college. Since joining, I have learned new things and developed as an
@@ -324,7 +330,7 @@
                         <div class="card-back">
                             <h3><b>Jacklin Chang</b></h3>
                             <p class="card-bio">
-                                I’m a 2nd year at UCI, majoring in Biological Sciences.
+                                I’m a 3rd year at UCI, majoring in Biological Sciences.
                                 <br><br>
                                 I first started karate when I was about 3 years old, and I’m currently a shodan at a Shotokan-based dojo.
                                 <br><br>
@@ -333,54 +339,6 @@
                                 and learn a new style of karate. During this time, I started becoming more comfortable and created bonds with the other members in the club.
                                 I enjoy having this community of people with diverse backgrounds who come together to practice an art and learn to protect ourselves. I’m looking
                                 forward to sharing more of these experiences with everyone!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content shadow">
-                        <div class="card-front">
-                            <img class="card-img" src="images/portraits/rebecca.jpeg">
-                            <div class="name">
-                                <span>Rebecca Truong</span>
-                                <span class="position">Outreach Chair</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3><b>Rebecca Truong</b></h3>
-                            <p class="card-bio">
-                                I’m a 4th year at UCI, majoring in Psychological Science and minoring in International Studies.
-                                <br><br>
-                                I joined the Nihon Karate Club at UCI in Fall 2018 during my second year without any experience in Karate.
-                                I started out going to class occasionally but began to regularly attend class and practice karate during my
-                                time in my third year. And that’s one of the best decisions I made in college because of the wonderful community
-                                our club has formed. Some of my favorite memories of karate include the times when we practiced at the ARC, empty
-                                parking lots, and living rooms. I’m currently an orange belt. I’m excited to meet new members and reconnect with
-                                returning members during the school year. I hope we can foster an even stronger community with a passion for karate!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content shadow">
-                        <div class="card-front">
-                            <img class="card-img" src="images/portraits/punit.jpg">
-                            <div class="name">
-                                <span>Punit Munnangi</span>
-                                <span class="position">Web Master</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3><b>Punit Munnangi</b></h3>
-                            <p class="card-bio">
-                                I am a 4th year at UCI, majoring in Computer Game Science.
-                                <br><br>
-                                I started karate in my third year at UCI because I was interested in learning self defense techniques to protect myself.
-                                I also wanted to try out a new form of exercise because I have participated in a lot of team sports in the past. I wanted to
-                                try something new; and I also thought karate would be a great opportunity for me to build up my confidence. After training
-                                karate for the fall and winter quarter I can say that karate has made me stronger, more confident, and more disciplined.
-                                It has been an honor to train under Sensei Bruce Nguyen; he has helped me transition well into this club, starting lightly,
-                                but pushing me to work harder as time progressed. I wish to continue training for UCI along with my friends as long as I can!
                             </p>
                         </div>
                     </div>
@@ -407,9 +365,9 @@
                     </div>
                 </div>
                 <address>
-                    Contact: <a class="email" href="mailto:karate@uci.edu">karate@uci.edu</a>
+                    Contact: <a class="email"></a>
                 </address>
-                <span>&copy; 2009-<script type="text/javascript">document.write(new Date().getFullYear());</script> Nihon Karate Club at UC Irvine</span>
+                <span>Copyright 2009-<script type="text/javascript">document.write(new Date().getFullYear());</script> Nihon Karate Club at UC Irvine</span>
             </div>
         </footer>
     </body>
