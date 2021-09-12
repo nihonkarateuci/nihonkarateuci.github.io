@@ -30,8 +30,8 @@ NKCConfig.practice = Object.freeze({
         x: "35%",
       },
       location: "Laguna Niguel Dojo",
-      start_time: "7:30pm",
-      end_time: "9:00pm",
+      start_time: "7:45pm",
+      end_time: "9:15pm",
     },
     {
       name: "Saturdays",
