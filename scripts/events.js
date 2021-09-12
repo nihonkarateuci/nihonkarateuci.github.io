@@ -18,20 +18,20 @@ NKCConfig.events = Object.freeze({
         "Stop by our booth to understand what we do, and how you can get involved!",
     },
     {
-      name: "Late Night with Campus Recreation",
+      name: "Late Night at the ARC",
       image: {
         path: "images/home/latenight.jpg",
       },
       location: "ARC",
       date: new Date((year = 2021), (month = 09), (date = 20), (hours = 20)),
-      start_time: "8pm",
-      end_time: "12am",
+      start_time: "6:40pm",
+      end_time: "7:15pm",
       description:
         "The best way to experience karate is to do it yourself. " +
         "Hop in to our practice session to see what we're all about.",
     },
     {
-      name: "Quarterly Beach Workout",
+      name: "Fall Beach Workout",
       image: {
         path: "images/home/beach.jpg",
       },
