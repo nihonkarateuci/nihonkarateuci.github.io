@@ -10,7 +10,7 @@ NKCConfig.events = Object.freeze({
         y: "30%",
       },
       location: "Aldrich Park",
-      date: new Date((year = 2021), (month = 09), (date = 20), (hours = 11)),
+      date: new Date((year = 2021), (month = 08), (date = 20), (hours = 11)),
       start_time: "11am",
       end_time: "3pm",
       description:
@@ -23,12 +23,12 @@ NKCConfig.events = Object.freeze({
         path: "images/home/latenight.jpg",
       },
       location: "ARC",
-      date: new Date((year = 2021), (month = 09), (date = 20), (hours = 20)),
+      date: new Date((year = 2021), (month = 08), (date = 20), (hours = 20)),
       start_time: "6:40pm",
       end_time: "7:15pm",
       description:
-        "The best way to experience karate is to do it yourself. " +
-        "Hop in to our practice session to see what we're all about.",
+        "The best way to experience karate is to do it yourself, so " +
+        "hop in to our demo to see what we're all about!",
     },
     {
       name: "Fall Beach Workout",
@@ -36,16 +36,15 @@ NKCConfig.events = Object.freeze({
         path: "images/home/beach.jpg",
       },
       location: "Salt Creek Beach",
-      date: new Date((year = 2021), (month = 09), (date = 26), (hours = 10)),
+      date: new Date((year = 2021), (month = 08), (date = 26), (hours = 10)),
       start_time: "10am",
       end_time: "12pm",
       description:
-        "Join us for a longstanding club tradition. " +
+        "Join us for a longstanding club tradition! " +
         "Rides will be provided, leaving from in front of the ARC at 9am.",
     },
   ],
 });
-
 
 // Renders the calendar of upcoming events.
 function renderEventsCalendar() {
