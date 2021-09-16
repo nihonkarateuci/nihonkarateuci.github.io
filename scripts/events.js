@@ -12,7 +12,7 @@ NKCConfig.events = Object.freeze({
       location: "Aldrich Park",
       date: new Date((year = 2021), (month = 08), (date = 20), (hours = 11)),
       start_time: "11am",
-      end_time: "3pm",
+      end_time: "4pm",
       description:
         "Interested in learning more about the Karate Club? " +
         "Stop by our booth to understand what we do, and how you can get involved!",
