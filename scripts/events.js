@@ -4,44 +4,44 @@ NKCConfig = NKCConfig || {};
 NKCConfig.events = Object.freeze({
   calendar: [
     {
-      name: "Anteater Involvement Fair",
+      name: "Celebrate UCI",
       image: {
         path: "images/home/AIFDay1.jpg",
         y: "30%",
       },
       location: "Aldrich Park",
-      date: new Date((year = 2021), (month = 08), (date = 20), (hours = 11)),
-      start_time: "11am",
-      end_time: "4pm",
+      date: new Date((year = 2021), (month = 03), (date = 16), (hours = 10)),
+      start_time: "10am",
+      end_time: "2pm",
       description:
         "Interested in learning more about the Karate Club? " +
         "Stop by our booth to understand what we do, and how you can get involved!",
     },
     {
-      name: "Late Night at the ARC",
+      name: "Officer Elections",
       image: {
-        path: "images/home/latenight.jpg",
+        path: "images/home/GameNightDay2.jpg",
       },
       location: "ARC",
-      date: new Date((year = 2021), (month = 08), (date = 20), (hours = 20)),
-      start_time: "6:40pm",
-      end_time: "7:15pm",
+      date: new Date((year = 2021), (month = 03), (date = 17), (hours = 18)),
+      start_time: "6:00pm",
+      end_time: "8:00pm",
       description:
-        "The best way to experience karate is to do it yourself, so " +
-        "hop in to our demo to see what we're all about!",
+        "It's time to see who will step up to the plate and lead us into next year!"
     },
     {
-      name: "Fall Beach Workout",
+      name: "Kyu Test",
       image: {
-        path: "images/home/beach.jpg",
+        path: "images/home/karatepracticetustin.jpg",
       },
-      location: "Salt Creek Beach",
-      date: new Date((year = 2021), (month = 08), (date = 26), (hours = 10)),
+      location: "Laguna Niguel Dojo",
+      date: new Date((year = 2021), (month = 03), (date = 24), (hours = 10)),
       start_time: "10am",
       end_time: "12pm",
       description:
-        "Join us for a longstanding club tradition! " +
-        "Rides will be provided, leaving from in front of the ARC at 9am.",
+        "Y'all have been training real hard, " + 
+        "so this is your chance to see how much you've learned!" +
+        "This will be our second, and last, belt test of the year."
     },
   ],
 });
