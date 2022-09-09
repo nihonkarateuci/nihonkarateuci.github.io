@@ -31,6 +31,8 @@ The only dependencies are [Font Awesome 4.7.0](https://cdnjs.cloudflare.com/ajax
 * `README.md` - You're looking at it right now
 
 ### **Build Guide**
+Outdated but left for reference. build.py no longer exists
+
 Run `python3 build.py` to build a folder to deploy to the sftp server
 
 When modifying build.py, consider the following: 
