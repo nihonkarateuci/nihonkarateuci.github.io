@@ -10,8 +10,8 @@ NKCConfig.practice = Object.freeze({
         x: "30%",
       },
       location: "ARC Sports Studio",
-      start_time: "7:30pm",
-      end_time: "8:50pm",
+      start_time: "6:30pm",
+      end_time: "7:50pm",
     },
     {
       name: "Thursdays",
@@ -20,8 +20,8 @@ NKCConfig.practice = Object.freeze({
         x: "35%",
       },
       location: "ARC Sports Studio",
-      start_time: "7:30pm",
-      end_time: "8:50pm",
+      start_time: "6:30pm",
+      end_time: "7:50pm",
     },
     {
       name: "Fridays",
