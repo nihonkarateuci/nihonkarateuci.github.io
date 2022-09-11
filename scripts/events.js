@@ -4,44 +4,42 @@ NKCConfig = NKCConfig || {};
 NKCConfig.events = Object.freeze({
   calendar: [
     {
-      name: "Celebrate UCI",
+      name: "Anteater Involvment Fair",
       image: {
         path: "images/home/AIFDay1.jpg",
         y: "30%",
       },
       location: "Aldrich Park",
-      date: new Date((year = 2021), (month = 03), (date = 16), (hours = 10)),
-      start_time: "10am",
-      end_time: "2pm",
+      date: new Date((year = 2022), (month = 08), (date = 19), (hours = 11)),
+      start_time: "11:00am",
+      end_time: "4:00pm",
       description:
         "Interested in learning more about the Karate Club? " +
         "Stop by our booth to understand what we do, and how you can get involved!",
     },
     {
-      name: "Officer Elections",
+      name: "Late Night at ARC Demo",
       image: {
         path: "images/home/GameNightDay2.jpg",
       },
       location: "ARC",
-      date: new Date((year = 2021), (month = 03), (date = 17), (hours = 18)),
+      date: new Date((year = 2022), (month = 08), (date = 19), (hours = 18)),
       start_time: "6:00pm",
-      end_time: "8:00pm",
+      end_time: "6:30pm",
       description:
-        "It's time to see who will step up to the plate and lead us into next year!"
+        "Head over to the Anteater Recreation Center to see what karate has to offer for yourself! Our demo will also include beginner-level interactions for some first-hand experience."
     },
     {
-      name: "Kyu Test",
+      name: "Boba Social",
       image: {
         path: "images/home/karatepracticetustin.jpg",
       },
-      location: "Laguna Niguel Dojo",
-      date: new Date((year = 2021), (month = 03), (date = 24), (hours = 10)),
-      start_time: "10am",
-      end_time: "12pm",
+      location: "Meeting at flagpoles",
+      date: new Date((year = 2022), (month = 08), (date = 28), (hours = 18)),
+      start_time: "6:30pm",
+      end_time: "7:30pm",
       description:
-        "Y'all have been training real hard, " + 
-        "so this is your chance to see how much you've learned!" +
-        "This will be our second, and last, belt test of the year."
+        "First social of the year, we are so excited to see new and old faces. Come hang out with the club over some boba!"
     },
   ],
 });
