@@ -35,7 +35,7 @@ NKCConfig.events = Object.freeze({
         path: "images/home/karatepracticetustin.jpg",
       },
       location: "Meeting at flagpoles",
-      date: new Date((year = 2022), (month = 08), (date = 28), (hours = 18)),
+      date: new Date((year = 2022), (month = 08), (date = 21), (hours = 18)),
       start_time: "6:00pm",
       end_time: "7:00pm",
       description:
