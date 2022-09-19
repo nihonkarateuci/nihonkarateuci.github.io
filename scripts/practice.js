@@ -6,7 +6,7 @@ NKCConfig.practice = Object.freeze({
     {
       name: "Tuesdays",
       image: {
-        path: "images/home/practice_0.jpeg",
+        path: "images/home/tuesday.jpg",
         x: "30%",
       },
       location: "ARC Sports Studio",
@@ -26,8 +26,8 @@ NKCConfig.practice = Object.freeze({
     {
       name: "Fridays",
       image: {
-        path: "images/home/practice_1.jpeg",
-        x: "35%",
+        path: "images/home/coolfriday.jpg",
+        x: "30%",
       },
       location: "Laguna Niguel Dojo",
       start_time: "7:30pm",
@@ -36,8 +36,8 @@ NKCConfig.practice = Object.freeze({
     {
       name: "Saturdays",
       image: {
-        path: "images/home/practice_3.jpeg",
-        x: "60%",
+        path: "images/home/coolsaturday.jpg",
+        x: "30%",
       },
       location: "Laguna Niguel Dojo",
       start_time: "2:00pm",
