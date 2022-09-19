@@ -20,7 +20,7 @@ NKCConfig.events = Object.freeze({
     {
       name: "Late Night at ARC Demo",
       image: {
-        path: "images/home/GameNightDay2.jpg",
+        path: "images/home/latenightnew.jpg",
       },
       location: "ARC",
       date: new Date((year = 2022), (month = 08), (date = 19), (hours = 18)),
@@ -32,7 +32,7 @@ NKCConfig.events = Object.freeze({
     {
       name: "Boba Social",
       image: {
-        path: "images/home/karatepracticetustin.jpg",
+        path: "images/home/coolsocial.jpg",
       },
       location: "Meeting at flagpoles",
       date: new Date((year = 2022), (month = 08), (date = 21), (hours = 18)),
