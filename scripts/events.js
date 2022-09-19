@@ -22,10 +22,10 @@ NKCConfig.events = Object.freeze({
       image: {
         path: "images/home/latenightnew.jpg",
       },
-      location: "ARC",
+      location: "ARC Sports Studio",
       date: new Date((year = 2022), (month = 08), (date = 19), (hours = 18)),
-      start_time: "6:00pm",
-      end_time: "6:30pm",
+      start_time: "7:00pm",
+      end_time: "8:20pm",
       description:
         "Head over to the Anteater Recreation Center to see what karate has to offer for yourself! Our demo will also include beginner-level interactions for some first-hand experience."
     },
@@ -34,7 +34,7 @@ NKCConfig.events = Object.freeze({
       image: {
         path: "images/home/coolsocial.jpg",
       },
-      location: "Meeting at flagpoles",
+      location: "UTC (in front of Cha for Tea)",
       date: new Date((year = 2022), (month = 08), (date = 21), (hours = 18)),
       start_time: "6:00pm",
       end_time: "7:00pm",
