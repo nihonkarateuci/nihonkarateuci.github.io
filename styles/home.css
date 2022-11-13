@@ -2,8 +2,9 @@
 /*    Desktop Styles    */
 /************************/
 .slideshow {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+	width: auto\9;
 }
 
 /* Card Containers */
