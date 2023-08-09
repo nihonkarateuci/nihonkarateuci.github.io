@@ -1,8 +1,11 @@
 User-agent: *
 Crawl-delay: 125
-Disallow: https://nihonkarateuci.com/images/
-Disallow: https://nihonkarateuci.com/resources/
-Disallow: https://nihonkarateuci.com/scripts/
-Disallow: https://nihonkarateuci.com/styles/
+Disallow: /images/
+Disallow: /resources/
+Disallow: /scripts/
+Disallow: /styles/
+
+User-agent: GPTBot
+Disallow: /
 
 Sitemap: https://nihonkarateuci.com/sitemap.xml
