@@ -24,8 +24,8 @@ NKCConfig.events = Object.freeze({
       },
       location: "ARC Sports Studio",
       date: new Date((year = 2024), (month = 08), (date = 23), (hours = 19)),
-      start_time: "6:30pm",
-      end_time: "7:00pm",
+      start_time: "8:00pm",
+      end_time: "8:50pm",
       description:
         "Head over to the Anteater Recreation Center to see what karate has to offer for yourself! Our demo will also include beginner-level interactions for some first-hand experience."
     },
