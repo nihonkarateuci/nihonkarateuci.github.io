@@ -36,8 +36,8 @@ NKCConfig.events = Object.freeze({
       },
       location: "UTC (in front of Cha for Tea)",
       date: new Date((year = 2025), (month = 09), (date = 24), (hours = 18)),
-      start_time: "6:00pm",
-      end_time: "7:00pm",
+      start_time: "5:00pm",
+      end_time: "6:00pm",
       description:
         "First social of the year, we are so excited to see new and old faces. Come hang out with the club over some boba!"
     },
